@@ -1,0 +1,6 @@
+a{
+    text-decoration: none !important;
+}
+a, button, img, input, span {
+    transition: all .3s ease 0s;
+}

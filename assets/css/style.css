@@ -1,0 +1,85 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color:#010101;
+    --primary-font: 'Poppins', sans-serif;
+}
+ul {
+    list-style: none outside none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* header */
+.header-padding-1>.container-fluid{
+    padding: 0 80px;
+}
+.logo {
+    margin-top: 32px;
+}
+.main-menu nav ul {
+    display: block;
+    margin-top: -5px;
+    text-align: center;
+}
+.main-menu nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+}
+.main-menu nav ul li>a {
+    color: #555252;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    line-height: 94px;
+}
+.header-right-wrap .same-style>button {
+    background: none;
+    border: none;
+}
+.header-right-wrap .same-style button, .header-right-wrap .same-style>a {
+    color: #000;
+    font-size: 23px;
+}
+.header-right-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+.header-right-wrap .same-style {
+    margin-left: 14px;
+    position: relative;
+}
+.header-right-wrap .same-style:first-child {
+    margin-left: 0;
+}
+button.search-active{
+    padding: 1px 6px;
+}
+.header-right-wrap .same-style:hover>button {
+    color: #a749ff;
+}
+span.count-style {
+    background-color: #000;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    position: absolute;
+    right: -14px;
+    text-align: center;
+    top: -16px;
+    width: 21px;
+}
