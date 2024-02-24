@@ -17,7 +17,9 @@ ul {
     margin: 0 !important;
     padding: 0 !important;
 }
-
+.container {
+    max-width: 1200px !important;
+}
 /* header */
 .header-padding-1>.container-fluid{
     padding: 0 80px;
@@ -83,3 +85,147 @@ span.count-style {
     top: -16px;
     width: 21px;
 }
+/* header end */
+/* slider */
+.single-slider {
+    align-items: flex-end;
+    display: flex;
+}
+
+.slider-height-1 {
+    height: 750px;
+}
+.bg-purple {
+    background-color: #f0e0ff;
+}
+.single-slider .slider-single-img {
+    margin: 0 -80px;
+}
+.single-slider .slider-content h3 {
+    font-size: 24px;
+    font-weight: 500 !important;
+    margin: 0;
+}
+.single-slider .slider-content h1 {
+    color: #010101;
+    font-size: 72px;
+    line-height: 97px;
+    margin: 6px 0 37px;
+}
+.btn-hover a, .btn-hover button {
+    isolation: isolate;
+    position: relative;
+    transition: all .5s ease-in-out 0s;
+}
+.single-slider .slider-content .slider-btn a {
+    border: 1px solid #333;
+    color: #010101;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    padding: 19px 50px 21px;
+    text-transform: uppercase;
+}
+.single-slider .slider-content .slider-btn a:hover {
+    border: 1px solid #a749ff;
+    color: #fff;
+}
+.btn-hover a:after, .btn-hover a:before, .btn-hover button:after, .btn-hover button:before {
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+    z-index: -1;
+}
+.btn-hover a:hover:after, .btn-hover button:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.btn-hover a:after, .btn-hover button:after {
+    background: #a749ff;
+    left: auto;
+    right: 0;
+    width: 0;
+}
+
+.prev-btn,
+.next-btn {
+    display: none; /* Initially hide the buttons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn,
+.next-btn {
+    display: none; /* Initially hide the buttons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn,
+.next-btn {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background: none;
+    color: #333;
+    width: 80px;
+    height: 80px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slider-container:hover .prev-btn,
+.slider-container:hover .next-btn {
+    display: block; 
+}
+.prev-btn i,
+.next-btn i{
+    font-size: 24px;
+}
+/* slider end */
