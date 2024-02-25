@@ -107,9 +107,17 @@
         padding: 10px 0 30px;
     }
     /* product end */
+    /* blog */
+    section.blog{
+        padding: 0px 0px 15px;
+    }
+    /* blog end */
     /* footer */
     .ml-50,.ml-75,.ml-70,.footer-widget {
         margin-left: 0px !important;
+    }
+    .mb-55{
+        margin-bottom: 30px;
     }
     .footer-area{
         padding: 60px 0px 30px;
