@@ -4,6 +4,14 @@
     font-family: Poppins,sans-serif;
     font-weight: 400 !important;
 }
+p{
+    color: #333;
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
 a{
     text-decoration: none !important;
 }
