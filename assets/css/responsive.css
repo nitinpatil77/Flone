@@ -49,6 +49,10 @@
         margin-left: -130px !important;
     }
     /* footer end */
+    .sidebar-style{
+        margin-top: 30px;
+        margin-right: 0;
+    }
 }
 @media only screen and (max-width: 767px){
     .container-fluid{
@@ -112,6 +116,21 @@
         padding: 0px 0px 15px;
     }
     /* blog end */
+    /* shop */
+    section.shop-area{
+        padding: 55px 0 45px;
+    }
+    .sidebar-style{
+        margin-top: 30px;
+        margin-right: 0;
+    }
+    .shop-top-bar .select-shoing-wrap {
+        display: block !important;
+    }
+    .shop-top-bar .select-shoing-wrap p {
+        margin: 5px 0 10px;
+    }
+    /* shop end */
     /* footer */
     .ml-50,.ml-75,.ml-70,.footer-widget {
         margin-left: 0px !important;

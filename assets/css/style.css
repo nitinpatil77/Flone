@@ -12,6 +12,11 @@ ul {
     margin: 0 !important;
     padding: 0 !important;
 }
+/*
+===================================================
+                    HEADER & FOOTER 
+===================================================
+*/
 /* header */
 .header-padding-1>.container-fluid{
     padding: 0 80px;
@@ -78,6 +83,94 @@ span.count-style {
     width: 21px;
 }
 /* header end */
+/* footer */
+.footer-area{
+    padding: 100px 0px 70px;
+    background: #f6f6f8;
+}
+.copyright{
+    margin: 0px 0px 30px;
+}
+.copyright .footer-logo {
+    margin-bottom: 12px;
+    margin-top: 41px;
+}
+.copyright p, .copyright p a {
+    color: #313131;
+}
+.copyright p {
+    letter-spacing: .9px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.footer-widget{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.footer-widget .footer-title h3 {
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500 !important;
+    line-height: 1;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+.footer-widget .footer-list ul li a {
+    color: #5d5d5d;
+    letter-spacing: .3px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-widget .footer-list ul li {
+    margin: 0 0 11px;
+}
+.footer-widget .subscribe-style p {
+    color: #7a7a7a;
+    margin: 0 0 20px;
+}
+.footer-widget .footer-list ul li a:hover {
+    color: #a749ff;
+}
+.footer-widget .subscribe-style .subscribe-form input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+    color: #333;
+    font-size: 13px;
+    padding: 2px 10px 2px 0;
+}
+.clear {
+    clear: both;
+}
+.footer-widget .subscribe-style .subscribe-form .clear button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #9b9b9c;
+    color: #313131;
+    font-size: 14px;
+    height: auto;
+    line-height: 1;
+    margin: 13px 0 0;
+    padding: 0 0 1px;
+    text-transform: uppercase;
+    width: auto;
+}
+.footer-widget .subscribe-style .subscribe-form .clear button:hover {
+    border-bottom: 2px solid #a749ff;
+    color: #a749ff;
+}
+/* footer end */
+/*
+===================================================
+                    HEADER & FOOTER END
+===================================================
+*/
+/* 
+===================================================
+                    HOME PAGE
+===================================================
+*/
 /* slider */
 .single-slider {
     align-items: flex-end;
@@ -482,82 +575,169 @@ section.blog{
     color: #666;
     font-style: italic;
 }
+.blog-wrap .blog-img img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all .5s ease 0s;
+    width: 100%;
+}
 /* blog end */
-/* footer */
-.footer-area{
-    padding: 100px 0px 70px;
-    background: #f6f6f8;
+/* 
+===================================================
+                    HOME PAGE END
+===================================================
+*/
+/* 
+===================================================
+                    SHOP PAGE 
+===================================================
+*/
+section.breadcrumb-area {
+    background: #f7f7f7;
+    padding: 35px 0px;
 }
-.copyright{
-    margin: 0px 0px 30px;
+.breadcrumb-item {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500 !important;
+    text-transform: uppercase;
 }
-.copyright .footer-logo {
-    margin-bottom: 12px;
-    margin-top: 41px;
+.breadcrumb-item a{
+    color: #5b5858 !important;
 }
-.copyright p, .copyright p a {
-    color: #313131;
+.breadcrumb-item.active {
+    color: #000 !important;
 }
-.copyright p {
-    letter-spacing: .9px;
+section.shop-area{
+    padding: 95px 0px 100px;
 }
-p:last-child {
-    margin-bottom: 0;
+.shop-top-bar{
+    margin: 0px 0px 35px;
 }
-.footer-widget{
-    margin-left: 30px;
-    margin-bottom: 30px;
+.shop-top-bar .select-shoing-wrap .shop-select {
+    margin-right: 50px;
 }
-.footer-widget .footer-title h3 {
-    color: #313131;
+.shop-top-bar .select-shoing-wrap .shop-select select {
+    border: 1px solid #e6e6e6;
+    color: #606060;
+    font-size: 14px;
+    min-width: 143px;
+    padding: 5px;
+    background: transparent;
+}
+option {
+    background: #fff;
+    border: 0 solid #626262;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.shop-top-bar .select-shoing-wrap p {
+    color: #606060;
+    margin: 0;
+}
+.sidebar-style{
+    margin-right:30px;
+}
+.sidebar-widget h4.pro-sidebar-title {
+    color: #333;
     font-size: 16px;
     font-weight: 500 !important;
-    line-height: 1;
-    margin: 0 0 16px;
-    text-transform: uppercase;
+    margin: 0;
 }
-.footer-widget .footer-list ul li a {
-    color: #5d5d5d;
-    letter-spacing: .3px;
+.pro-sidebar-search{
+    margin: 25px 0 50px;
+}
+.pro-sidebar-search .pro-sidebar-search-form input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    color: #000;
     font-size: 14px;
-    font-weight: 400;
+    height: 43px;
+    padding: 2px 55px 2px 18px;
 }
-.footer-widget .footer-list ul li {
-    margin: 0 0 11px;
+.pro-sidebar-search .pro-sidebar-search-form button {
+    background: transparent none repeat scroll 0 0;
+    border: #a1a5aa;
+    border-image: none;
+    border-left: 1px solid #a1a5aa;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: all .3s ease 0s;
 }
-.footer-widget .subscribe-style p {
-    color: #7a7a7a;
-    margin: 0 0 20px;
+.sidebar-widget .sidebar-widget-list ul li {
+    align-items: center;
+    padding: 0 0 15px;
+    position: relative;
+    font-size: 14px;
 }
-.footer-widget .footer-list ul li a:hover {
-    color: #a749ff;
-}
-.footer-widget .subscribe-style .subscribe-form input {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #ebebeb;
-    color: #333;
-    font-size: 13px;
-    padding: 2px 10px 2px 0;
-}
-.clear {
-    clear: both;
-}
-.footer-widget .subscribe-style .subscribe-form .clear button {
+.sidebar-widget .sidebar-widget-list ul li button {
     background: none;
     border: none;
-    border-bottom: 2px solid #9b9b9c;
-    color: #313131;
-    font-size: 14px;
-    height: auto;
+    display: block;
+    padding: 0 0 0 30px;
+    position: relative;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+}
+.sidebar-widget .sidebar-widget-list ul li .sidebar-widget-list-left .checkmark {
+    background-color: #fff;
+    border: 2px solid #888;
+    border-radius: 3px;
+    height: 15px;
+    top: 4.5px;
+    left: 0;
+    position: absolute;
+    width: 15px;
+}
+.sidebar-widget .sidebar-widget-list ul li button:hover>.checkmark:after {
+    display: block;
+}
+.sidebar-widget .sidebar-widget-list ul li .sidebar-widget-list-left .checkmark:after {
+    border: solid #fff;
+    content: "";
+    display: none;
+    height: 8px;
+    left: 3px;
+    position: absolute;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 5px;
+}
+.sidebar-widget .sidebar-widget-list ul li button:hover>.checkmark {
+    background-color: #a749ff;
+    border-color: #a749ff;
+}
+.sidebar-widget .sidebar-widget-tag ul li {
+    display: inline-block;
+    margin: 0 7px 15px 0;
+}
+.sidebar-widget .sidebar-widget-tag ul li button {
+    background: none;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 50px;
+    color: #424242;
+    display: inline-block;
     line-height: 1;
-    margin: 13px 0 0;
-    padding: 0 0 1px;
-    text-transform: uppercase;
-    width: auto;
+    padding: 9px 17px 12px;
+    font-size: 14px;
+    text-transform: capitalize;
 }
-.footer-widget .subscribe-style .subscribe-form .clear button:hover {
-    border-bottom: 2px solid #a749ff;
-    color: #a749ff;
+.sidebar-widget .sidebar-widget-tag ul li button:hover {
+    background-color: #a749ff;
+    color: #fff;
 }
-/* footer end */
+/* 
+===================================================
+                    SHOP PAGE END
+===================================================
+*/

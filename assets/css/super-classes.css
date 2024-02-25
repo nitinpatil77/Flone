@@ -33,6 +33,9 @@ input {
     height: 45px;
     padding-left: 10px;
 }
+select:focus-visible {
+    outline: none !important;
+}
 .ml-50{
     margin-left: 50px !important;
 }
@@ -47,4 +50,19 @@ input {
 }
 .mb-55{
     margin-bottom: 55px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-50{
+    margin-top: 50px;
 }
