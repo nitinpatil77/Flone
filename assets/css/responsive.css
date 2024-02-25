@@ -82,6 +82,31 @@
         margin: 6px 0 20px;
     }
     /* slider end */
+    /* support */
+    section.support{
+        padding: 60px 0 20px;
+    }
+    /* support end */
+    /* product */
+    section.product-area{
+        padding: 0px 0px 20px;
+    }
+    .section-title h2:before,.section-title h2:after{
+        width: 30px;
+    }
+    .section-title h2:before{
+        left: -40px;
+    }
+    .section-title h2:after{
+        right: -40px;
+    }
+    .product-tab-list a {
+        margin: 0 11px 5px;
+    }
+    .product-tab-list{
+        padding: 10px 0 30px;
+    }
+    /* product end */
     /* footer */
     .ml-50,.ml-75,.ml-70,.footer-widget {
         margin-left: 0px !important;

@@ -12,7 +12,10 @@ p{
     line-height: 24px;
     margin-bottom: 15px;
 }
-a{
+a, button {
+    color: #000 ;
+    cursor: pointer;
+    line-height: inherit;
     text-decoration: none !important;
 }
 a, button, img, input, span {
