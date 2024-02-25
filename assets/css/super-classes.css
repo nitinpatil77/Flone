@@ -18,3 +18,24 @@ a{
 a, button, img, input, span {
     transition: all .3s ease 0s;
 }
+input, select {
+    box-shadow: none;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+}
+input {
+    background: #eceff8;
+    border: 2px solid #eceff8;
+    height: 45px;
+    padding-left: 10px;
+}
+.ml-50{
+    margin-left: 50px !important;
+}
+.ml-75{
+    margin-left: 75px;
+}
+.ml-70{
+    margin-left: 70px;
+}
