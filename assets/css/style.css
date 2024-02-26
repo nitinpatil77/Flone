@@ -746,8 +746,31 @@ option {
 ===================================================
                     CART PAGE
 =================================================== */
+section.cart-main-area{
+    padding: 90px 0 100px;
+}
+.item-empty-area__icon i {
+    font-size: 140px;
+    line-height: 1;
+}
+.item-empty-area__text {
+    font-size: 20px;
+}
+.item-empty-area__text a {
+    background-color: #363f4d;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500 !important;
+    margin-top: 30px;
+    padding: 10px 30px;
+    transition: .3s;
+}
+.item-empty-area__text a:hover {
+    background-color: #a749ff;
+    color: #fff;
+}
 /* 
-
 ===================================================
                     CART PAGE END
 =================================================== */

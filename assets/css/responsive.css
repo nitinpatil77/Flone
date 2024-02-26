@@ -131,6 +131,11 @@
         margin: 5px 0 10px;
     }
     /* shop end */
+    /* cart */
+    section.cart-main-area{
+        padding: 50px 0 60px;
+    }
+    /* cart end */
     /* footer */
     .ml-50,.ml-75,.ml-70,.footer-widget {
         margin-left: 0px !important;
