@@ -713,4 +713,231 @@ const product = [
     mainDescription:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
   },
+  {
+    id: 17,
+    name: "Lorem ipsum chair one",
+    price: "$15.6",
+    rating: 4,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/1.jpg",
+      "./assets/img/product/furnitures/2.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/1.jpg",
+      "./assets/img/product/furnitures/2.jpg",
+      "./assets/img/product/furnitures/3.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/5.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 18,
+    name: "Lorem ipsum chair two",
+    price: "$9.54",
+    discount:'10%',
+    new:'new',
+    rating: 5,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/2.jpg",
+      "./assets/img/product/furnitures/3.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/6.jpg",
+      "./assets/img/product/furnitures/2.jpg",
+      "./assets/img/product/furnitures/3.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/5.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 19,
+    name: "Lorem ipsum chair three  ",
+    price: "$10",
+    discount:'20%',
+    new:'new',
+    rating: 3,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/3.jpg",
+      "./assets/img/product/furnitures/4.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/6.jpg",
+      "./assets/img/product/furnitures/7.jpg",
+      "./assets/img/product/furnitures/3.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/5.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 20,
+    name: "Lorem ipsum sofa one",
+    price: "$10.15",
+    discount:'30%',
+    rating: 4,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/5.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/6.jpg",
+      "./assets/img/product/furnitures/7.jpg",
+      "./assets/img/product/furnitures/8.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/5.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 21,
+    name: "Lorem ipsum sofa two",
+    price: "$20.25",
+    discount:'10%',
+    new:'new',
+    rating: 5,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/5.jpg",
+      "./assets/img/product/furnitures/6.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/6.jpg",
+      "./assets/img/product/furnitures/7.jpg",
+      "./assets/img/product/furnitures/8.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/3.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 22,
+    name: "Lorem ipsum sofa three",
+    price: "$12.5",
+    rating: 4,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/6.jpg",
+      "./assets/img/product/furnitures/7.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/2.jpg",
+      "./assets/img/product/furnitures/7.jpg",
+      "./assets/img/product/furnitures/8.jpg",
+      "./assets/img/product/furnitures/6.jpg",
+      "./assets/img/product/furnitures/3.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 23,
+    name: "Lorem ipsum sofa four",
+    price: "$18",
+    discount:'20%',
+    new:'new',
+    rating: 5,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/7.jpg",
+      "./assets/img/product/furnitures/8.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/2.jpg",
+      "./assets/img/product/furnitures/3.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/8.jpg",
+      "./assets/img/product/furnitures/7.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    id: 24,
+    name: "Lorem ipsum sofa five",
+    price: "$29.25",
+    discount:'10%',
+    new:'new',
+    rating: 5,
+    Categories: ["electronics"],
+    Tags: ["electronics"],
+    Weight: " 400 g",
+    Dimensions: "10 x 10 x 15 cm",
+    Materials: "60% cotton, 40% polyester",
+    Other_Info: "American heirloom jean shorts pug seitan letterpress",
+    product_main_img: [
+      "./assets/img/product/furnitures/8.jpg",
+      "./assets/img/product/furnitures/1.jpg"
+    ],
+    varition_img: [
+      "./assets/img/product/furnitures/2.jpg",
+      "./assets/img/product/furnitures/3.jpg",
+      "./assets/img/product/furnitures/4.jpg",
+      "./assets/img/product/furnitures/8.jpg",
+      "./assets/img/product/furnitures/1.jpg"
+    ],
+    subDescrption:
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    mainDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
 ];
