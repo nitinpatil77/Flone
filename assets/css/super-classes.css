@@ -12,6 +12,11 @@ p{
     line-height: 24px;
     margin-bottom: 15px;
 }
+ul {
+    list-style: none outside none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 a, button {
     color: #000 ;
     cursor: pointer;

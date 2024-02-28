@@ -7,11 +7,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-ul {
-    list-style: none outside none;
-    margin: 0 !important;
-    padding: 0 !important;
-}
 /*
 ===================================================
                     HEADER & FOOTER 
