@@ -1,25 +1,32 @@
-var Api=[];
-fetch('https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json')
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        Api = data; // Assign fetched data to a variable
-        
-        let cartPage = document.getElementById("daily-deals");
-        var count=0;
-        let mainProduct = () => {
-          return (cartPage.innerHTML = 
-            Api.map((item) => {
-              console.log('name',item);
-              let { id, name, price,discount,newP,rating, product_main_img } = item;
-              const discountedPrice = price - (price * (discount / 100));
-             
-              if(count==8){
-                return;
-              }
-             count++;
-              return `
+let mainProduct = () => {}; // Initialize with an empty function
+
+window.onload = () => {
+  mainProduct();
+};
+
+var Api = [];
+
+fetch(
+  "https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json"
+)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    Api = data; // Assign fetched data to a variable
+
+    let cartPage = document.getElementById("daily-deals");
+    var count = 0;
+    mainProduct = () => {
+      return (cartPage.innerHTML = Api.map((item) => {
+        let { id, name, price, discount, newP, rating, product_main_img } = item;
+        const discountedPrice = price - price * (discount / 100);
+
+        if (count == 8) {
+          return;
+        }
+        count++;
+        return `
         
               <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
                 <div class="product-card position-relative">
@@ -29,8 +36,16 @@ fetch('https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json
                           <img src="${product_main_img[1]}" alt="product-img" class="hover-img">
                       </a>
                       <div class="product-img-badges">
-                          ${discount ? `<span class="pink">${discount}%</span>` : ''}
-                          ${newP ? `<span class="purple">${newP}</span>` : ''}
+                          ${
+                            discount
+                              ? `<span class="pink">${discount}%</span>`
+                              : ""
+                          }
+                          ${
+                            newP
+                              ? `<span class="purple">${newP}</span>`
+                              : ""
+                          }
                       </div>
                       <div class="product-action d-flex">
                           <div class="pro-same-action pro-wishlist">
@@ -39,7 +54,7 @@ fetch('https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json
                               </button>
                           </div>
                           <div class="pro-same-action pro-cart">
-                              <button class="" title="Add to cart" onclick=addCart(${id})> 
+                              <button title="Add to cart" onclick="addToCart(${id})"> 
                                   <i class="bi bi-cart2"></i> Add to cart
                               </button>
                           </div>
@@ -56,7 +71,6 @@ fetch('https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json
                           ${generateStars(rating)}
                       </div>
                       <div class="product-price">
-                    
                           <span class="new">$${discountedPrice.toFixed(2)}</span> 
                           <span class="old">$${price}</span>
                       </div>
@@ -64,18 +78,10 @@ fetch('https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json
                 </div>
               </div>
                 `;
-            })
-        
-            .join(""));
-          
-        };
-        mainProduct();
-    })
-    .catch((error) => console.log(error));
-
-
-
-
+      }).join(""));
+    };
+  })
+  .catch((error) => console.log(error));
 
 // Rating
 function generateStars(rating) {
@@ -96,5 +102,11 @@ function generateStars(rating) {
   return starsHTML;
 }
 
+var cartItems = [];
 
-
+function addToCart(productId) {
+  console.log("click");
+  cartItems.push(Api.find(item => item.id === productId));
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
+}
