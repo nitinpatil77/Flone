@@ -782,6 +782,9 @@ h3.cart-page-title {
     background-color: #f9f9f9;
     border: 1px solid #ebebeb;
 }
+.cart-table-content table tbody>tr {
+    border-bottom: 1px solid #ebebeb;
+}
 .cart-table-content table thead>tr th {
     border-top: none;
     color: #333;
@@ -1078,6 +1081,12 @@ h4.grand-totall-title {
     text-align: center;
     text-transform: uppercase;
 }
+.cart-table-content table tbody>tr td.product-price-cart span.old {
+    color: #8e8e8e;
+    margin-right: 10px;
+    text-decoration: line-through;
+    font-weight:500 !important;
+}
 /* 
 ===================================================
                     CART PAGE END
@@ -1094,7 +1103,7 @@ h4.grand-totall-title {
     color: #fff;
     display: block;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 500 !important;
     line-height: 1;
     margin-bottom: 10px;
     padding: 3px 11px;
@@ -1139,10 +1148,10 @@ h4.grand-totall-title {
 .product-details-content .pro-details-size-color .pro-details-color-wrap {
     margin-right: 20px;
 }
-.product-details-content .pro-details-size-color .pro-details-color-wrap span {
+.product-details-content .pro-details-size-color .pro-details-color-wrap span,.product-details-content .pro-details-size-color .pro-details-size span {
     display: block;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 500 !important;
     margin: 0 0 15px;
 }
 .product-details-content .pro-details-size-color .pro-details-color-wrap .pro-details-color-content--single.white {
@@ -1164,6 +1173,168 @@ h4.grand-totall-title {
     height: 100%;
     opacity: 0;
     position: absolute;
+}
+.product-details-content .pro-details-size-color .pro-details-color-wrap .pro-details-color-content--single.white {
+    background-color: #fff;
+    border: 1px solid #333;
+}
+input, select {
+    box-shadow: none;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+}
+.product-details-content .pro-details-size-color .pro-details-color-wrap .pro-details-color-content--single.black {
+    background-color: #333;
+    border: 1px solid #333;
+}
+.product-details-content .pro-details-size-color .pro-details-color-wrap .pro-details-color-content--single.brown {
+    background-color: brown;
+    border: 1px solid brown;
+}
+.product-details-content .pro-details-size-color .pro-details-size .pro-details-size-content--single {
+    background-color: #f1f2f6;
+    color: #000;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    margin: 0 5px 0 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.product-details-content .pro-details-size-color .pro-details-size .pro-details-size-content--single input:checked~.size-name {
+    background-color: #a749ff;
+    color: #fff;
+}
+.product-details-content .pro-details-quality {
+    align-items: center;
+    display: flex;
+    margin-bottom: 34px;
+    margin-top: 40px;
+}
+.product-details-content .pro-details-size-color .pro-details-size .pro-details-size-content--single .size-name {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 8px;
+    width: 100%;
+}
+.product-details-content .pro-details-size-color .pro-details-size .pro-details-size-content--single input {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+.product-details-content .pro-details-quality .cart-plus-minus {
+    border: 1px solid #e8e8e8;
+    display: inline-block;
+    height: 60px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 80px;
+}
+.product-details-content .pro-details-quality .cart-plus-minus .dec.qtybutton {
+    height: 60px;
+    left: 0;
+    top: 0;
+}
+.product-details-content .pro-details-quality .cart-plus-minus .inc.qtybutton {
+    height: 60px;
+    right: 0;
+    top: 0;
+}
+input {
+    background: #eceff8;
+    border: 2px solid #eceff8;
+    height: 45px;
+    padding-left: 10px;
+}
+.product-details-content .pro-details-quality .cart-plus-minus .qtybutton {
+    background: none;
+    border: none;
+    color: #8f8f8f;
+    cursor: pointer;
+    float: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    transition: all .3s ease 0s;
+    width: 24px;
+}
+.product-details-content .pro-details-quality .cart-plus-minus input.cart-plus-minus-box {
+    background: transparent none repeat scroll 0 0;
+    border: none;
+    color: #8f8f8f;
+    float: left;
+    font-size: 14px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+}
+.product-details-content .pro-details-quality .pro-details-cart {
+    margin: 0 25px 0 10px;
+}
+.product-details-content .pro-details-quality .pro-details-cart a, .product-details-content .pro-details-quality .pro-details-cart button {
+    background: none;
+    background-color: #343538;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700 !important;
+    line-height: 1;
+    padding: 23px 38px;
+    text-transform: uppercase;
+    z-index: 99;
+}
+.product-details-content .pro-details-quality .pro-details-wishlist a, .product-details-content .pro-details-quality .pro-details-wishlist button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 18px;
+}
+.product-details-content .pro-details-quality .pro-details-compare a, .product-details-content .pro-details-quality .pro-details-compare button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    margin-left: 25px;
+}
+.product-details-content .pro-details-meta span {
+    color: #676767;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.product-details-content .pro-details-meta {
+    margin: 0 0 10px;
+}
+.product-details-content .pro-details-meta ul li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.product-details-content .pro-details-meta ul li a {
+    color: #676767;
+    font-size: 15px;
+}
+.product-details-content .pro-details-social {
+    margin: 24px 0 0;
+}
+.product-details-content .pro-details-social ul li {
+    margin-right: 40px;
+}
+.product-details-content .pro-details-social ul li a {
+    color: #343538;
+    font-size: 16px;
+}
+.product-details-content .pro-details-social ul li a:hover,.product-details-content .pro-details-quality .pro-details-compare button {
+    color: #a749ff;
 }
 /* 
 ===================================================

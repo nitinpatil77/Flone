@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +20,6 @@
         integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <!-- header -->
     <header class="position-relative">
@@ -40,9 +38,9 @@
                             <nav>
                                 <ul>
                                     <li><a href="/index.html">Home</a></li>
-                                    <li><a href="./shop.html">Shop</a></li>
-                                    <li><a href="./shop.html">Collection</a></li>
-                                    <li><a href="./cart.html">Pages</a></li>
+                                    <li><a href="../pages/shop.html">Shop</a></li>
+                                    <li><a href="../pages/shop.html">Collection</a></li>
+                                    <li><a href="./index.html">Pages</a></li>
                                     <li><a href="./index.html">Blog</a></li>
                                     <li><a href="./index.html">Contact Us</a></li>
                                 </ul>
@@ -92,7 +90,7 @@
                             <div class="same-style cart-wrap d-none d-lg-block">
                                 <button class="icon-cart">
                                     <i class="bi bi-bag-check"></i>
-                                    <span class="count-style cart">0</span>
+                                    <span class="count-style">0</span>
                                 </button>
                                 <!-- <div class="shopping-cart-content">
                                     <p class="text-center">No items added to cart</p>
@@ -117,8 +115,8 @@
     </header>
     <!-- header end -->
     <main>
-        <!-- breadcrumb -->
-        <section class="breadcrumb-area">
+         <!-- breadcrumb -->
+         <section class="breadcrumb-area">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center m-0">
@@ -129,152 +127,135 @@
             </div>
         </section>
         <!-- breadcrumb end -->
-        <!-- cart area -->
-        <section class="cart-main-area">
-            <div class="container" id="empty-cart">
+        <!-- shop area -->
+        <section class="shop-area">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="item-empty-area text-center">
-                            <div class="item-empty-area__icon mb-30">
-                                <i class="bi bi-cart3"></i>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-large-image-wrapper position-relative">
+                            <div class="product-img-badges">
+                                <span class="pink">-10%</span>
                             </div>
-                            <div class="item-empty-area__text">
-                                No items found in cart <br> 
-                                <a href="../pages/shop.html">Shop Now</a>
+                            <div class="swiper-wrap">
+                                <div class="single-image"><img src="./assets/img/product/fashion/1.jpg" class="img-fluid" alt=""></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container" id="full-fill-cart">
-                <h3 class="cart-page-title">Your cart items</h3>
-                <div class="row" >
-                    <div class="col-12">
-                        <div class="table-content table-responsive cart-table-content">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Image</th>
-                                        <th>Product Name</th>
-                                        <th>Unit Price</th>
-                                        <th>Qty</th>
-                                        <th>Subtotal</th>
-                                        <th>action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="product-thumbnail">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../img/product/fashion/1.jpg" alt="">
-                                            </a>
-                                        </td>
-                                        <td class="product-name">
-                                            <a href="#">Lorem ipsum jacket</a>
-                                            <div class="cart-item-variation">
-                                                <span>Color: white</span>
-                                                <span>Size: x</span>
-                                            </div>
-                                        </td>
-                                        <td class="product-price-cart">
-                                            <span class="amount old">$12.45</span>
-                                            <span class="amount">$11.20</span>
-                                        </td>
-                                        <td class="product-quantity">
-                                            <div class="cart-plus-minus">
-                                                <button class="dec qtybutton">-</button>
-                                                <input class="cart-plus-minus-box" type="text" readonly="" value="1">
-                                                <button class="inc qtybutton">+</button>
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal">$11.20</td>
-                                        <td class="product-remove">
-                                            <button><i class="fa fa-times"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cart-shiping-update-wrapper">
-                            <div class="cart-shiping-update">
-                                <a href="#">Continue Shopping</a>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-details-content ml-70">
+                            <h2>Lorem ipsum jacket</h2>
+                            <div class="product-details-price">
+                                <span>$11.2</span> 
+                                <span class="old">$12.45</span>
                             </div>
-                            <div class="cart-clear">
-                                <button class="border-0">Clear Shopping Cart</button>
+                            <div class="pro-details-rating-wrap">
+                                <div class="pro-details-rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="cart-tax">
-                            <div class="title-wrap">
-                                <h4 class="cart-bottom-title section-bg-gray">Estimate Shipping And Tax</h4>
+                            <div class="pro-details-list">
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
                             </div>
-                            <div class="tax-wrapper">
-                                <p>Enter your destination to get a shipping estimate.</p>
-                                <div class="tax-select-wrapper">
-                                    <div class="tax-select">
-                                        <label>* Country</label>
-                                        <select class="email s-email s-wid">
-                                            <option>Bangladesh</option>
-                                            <option>Albania</option>
-                                            <option>Åland Islands</option>
-                                            <option>Afghanistan</option>
-                                            <option>Belgium</option>
-                                        </select>
+                            <div class="pro-details-size-color d-flex">
+                                <div class="pro-details-color-wrap">
+                                    <span>Color</span>
+                                    <div class="pro-details-color-content">
+                                        <label class="pro-details-color-content--single white">
+                                            <input type="radio" name="product-color" value="white" checked="">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="pro-details-color-content--single black">
+                                            <input type="radio" name="product-color" value="black">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="pro-details-color-content--single brown">
+                                            <input type="radio" name="product-color" value="brown">
+                                            <span class="checkmark"></span>
+                                        </label>
                                     </div>
-                                    <div class="tax-select">
-                                        <label>* Region / State</label>
-                                        <select class="email s-email s-wid">
-                                            <option>Bangladesh</option>
-                                            <option>Albania</option>
-                                            <option>Åland Islands</option>
-                                            <option>Afghanistan</option>
-                                            <option>Belgium</option>
-                                        </select>
-                                    </div>
-                                    <div class="tax-select">
-                                        <label>* Zip/Postal Code</label>
-                                        <input type="text"></div>
-                                        <button class="cart-btn-2" type="submit">Get A Quote</button>
+                                </div>
+                                <div class="pro-details-size">
+                                    <span>Size</span>
+                                    <div class="pro-details-size-content">
+                                        <label class="pro-details-size-content--single">
+                                            <input type="radio" value="x" checked="">
+                                            <span class="size-name">x</span>
+                                        </label>
+                                        <label class="pro-details-size-content--single">
+                                            <input type="radio" value="m">
+                                            <span class="size-name">m</span>
+                                        </label>
+                                        <label class="pro-details-size-content--single">
+                                            <input type="radio" value="xl">
+                                            <span class="size-name">xl</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="discount-code-wrapper">
-                            <div class="title-wrap">
-                                <h4 class="cart-bottom-title section-bg-gray">Use Coupon Code</h4>
+                            <div class="pro-details-quality">
+                                <div class="cart-plus-minus">
+                                    <button class="dec qtybutton">-</button>
+                                    <input class="cart-plus-minus-box" type="text" readonly="" value="1">
+                                    <button class="inc qtybutton">+</button>
+                                </div>
+                                <div class="pro-details-cart btn-hover">
+                                    <button> Add To Cart </button>
+                                </div>
+                                <div class="pro-details-wishlist">
+                                    <button class="" title="Add to wishlist">
+                                        <i class="bi bi-suit-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="pro-details-compare">
+                                    <button class="" title="Add to compare">
+                                        <i class="bi bi-shuffle"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="discount-code">
-                                <p>Enter your coupon code if you have one.</p>
-                                <form>
-                                    <input type="text" required="" name="name">
-                                    <button class="cart-btn-2" type="submit">Apply Coupon</button>
-                                </form>
+                            <div class="pro-details-meta d-flex">
+                                <span>Categories :</span>
+                                <ul>
+                                    <li><a href="#">fashion</a></li>
+                                    <li><a href="#">men</a></li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="grand-totall">
-                            <div class="title-wrap position-relative">
-                                <h4 class="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
+                            <div class="pro-details-meta d-flex">
+                                <span>Tags :</span>
+                                <ul><li><a href="#">fashion</a></li>
+                                    <li><a href="#">men</a></li>
+                                    <li><a href="#">jacket</a></li>
+                                    <li><a href="#">full sleeve</a></li>
+                                </ul>
                             </div>
-                            <h5>Total products <span>$11.20</span></h5>
-                            <h4 class="grand-totall-title">Grand Total <span>$11.20</span></h4>
-                            <a href="#">Proceed to Checkout</a>
+                            <div class="pro-details-social">
+                                <ul class="d-flex">
+                                    <li>
+                                        <a href="//facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="//dribbble.com"><i class="fa-brands fa-dribbble"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="//pinterest.com"><i class="fa-brands fa-pinterest-p"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="//twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="//linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- cart area -->
-        
+        <!-- shop area end -->
     </main>
     <!-- footer -->
     <footer class="footer-area position-relative">
@@ -284,7 +265,7 @@
                     <div class="copyright">
                         <div class="footer-logo">
                             <a href="/index.html">
-                                <img src="../img/logo/logo.png" alt="footer-logo">
+                                <img src="./assets/img/logo/logo.png" alt="footer-logo">
                             </a>
                         </div>
                         <p>© 2024 <a href="https://hasthemes.com" rel="noopener noreferrer"
@@ -364,10 +345,10 @@
     </footer>
     <!-- footer end -->
     <!-- script -->
-    <!-- <script src="./assets/js/slider.js"></script> -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="./assets/js/cart.js"></script>
 </body>
+
 </html>

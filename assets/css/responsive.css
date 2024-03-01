@@ -59,6 +59,9 @@
         padding: 18px 25px 17px;
     }
     /* cart page end */
+    .product-details-content .pro-details-quality .pro-details-cart a, .product-details-content .pro-details-quality .pro-details-cart button {
+        padding: 22px;
+    }
 }
 @media only screen and (max-width: 767px){
     .container-fluid{
