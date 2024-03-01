@@ -1,6 +1,12 @@
 
 let mainProduct = () => {}; 
 let addToCart = () => {};
+window.onload=()=>{
+  let storedCartItems = localStorage.getItem('cartItems');
+  // If cartItems exist in localStorage, parse it; otherwise, initialize an empty array
+  cartItems = storedCartItems ? JSON.parse(storedCartItems) : [];
+  document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
+}
 const apiUrl = "https://raw.githubusercontent.com/nitinpatil77/JsonData/main/product.json";
 
 fetch(apiUrl)
@@ -78,11 +84,20 @@ fetch(apiUrl)
 
     };
     mainProduct();
-    var cartItems = [];
     addToCart = (productId) => {
       console.log("click");
+      // Retrieve cart items from localStorage
+      let storedCartItems = localStorage.getItem('cartItems');
+      
+      // If cartItems exist in localStorage, parse it; otherwise, initialize an empty array
+      cartItems = storedCartItems ? JSON.parse(storedCartItems) : [];  
+      // Push the selected product to the cartItems array
       cartItems.push(Api.find((item) => item.id === productId));
+      
+      // Save cartItems back to localStorage
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      
+      // Update the cart count display
       document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
     };
   })
