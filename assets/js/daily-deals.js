@@ -85,12 +85,12 @@ fetch(apiUrl)
     };
     mainProduct();
     addToCart = (productId) => {
-      console.log("click");
       // Retrieve cart items from localStorage
-      let storedCartItems = localStorage.getItem('cartItems');
-      
-      // If cartItems exist in localStorage, parse it; otherwise, initialize an empty array
-      cartItems = storedCartItems ? JSON.parse(storedCartItems) : [];  
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+       
+      document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
+      console.log(cartItems.length);
+    
       // Push the selected product to the cartItems array
       cartItems.push(Api.find((item) => item.id === productId));
       
@@ -99,7 +99,7 @@ fetch(apiUrl)
       
       // Update the cart count display
       document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
-    };
+     };
   })
   .catch((error) => console.log(error));
 
