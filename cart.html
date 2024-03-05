@@ -201,10 +201,10 @@
                     <div class="col-12">
                         <div class="cart-shiping-update-wrapper">
                             <div class="cart-shiping-update">
-                                <a href="./shop.html">Continue Shopping</a>
+                                <a href="#">Continue Shopping</a>
                             </div>
                             <div class="cart-clear">
-                                <button class="border-0">Clear Shopping Cart</button>
+                                <button class="border-0" onclick="removeAllItem()">Clear Shopping Cart</button>
                             </div>
                         </div>
                     </div>
@@ -265,8 +265,8 @@
                             <div class="title-wrap position-relative">
                                 <h4 class="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
                             </div>
-                            <h5>Total products <span>$11.20</span></h5>
-                            <h4 class="grand-totall-title">Grand Total <span>$11.20</span></h4>
+                            <h5>Total products <span id="total-product">0</span></h5>
+                            <h4 class="grand-totall-title">Grand Total <span id="grand-total">$0.00</span></h4>
                             <a href="#">Proceed to Checkout</a>
                         </div>
                     </div>
@@ -363,7 +363,6 @@
     </footer>
     <!-- footer end -->
     <!-- script -->
-    <!-- <script src="./assets/js/slider.js"></script> -->
     <script src="./assets/js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
