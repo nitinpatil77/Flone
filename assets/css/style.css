@@ -510,7 +510,7 @@ section.product-area{
     margin: 0 9px;
     position: relative;
 }
-.product-card .product-content .product-price span.new:before {
+/* .product-card .product-content .product-price span.new:before {
     background-color: #000;
     content: "";
     height: 2px;
@@ -518,7 +518,7 @@ section.product-area{
     right: -13px;
     top: 10px;
     width: 7px;
-}
+} */
 .product-card .product-content .product-price span.old {
     color: #8e8e8e;
     text-decoration: line-through;
@@ -832,6 +832,7 @@ h3.cart-page-title {
     padding: 0;
     position: relative;
     width: 110px;
+    border: 1px solid  #e5e5e5;
 }
 .cart-table-content table tbody>tr td.product-quantity .cart-plus-minus .dec.qtybutton {
     border-right: 1px solid #e5e5e5;
