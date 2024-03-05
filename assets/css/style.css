@@ -1351,11 +1351,11 @@ section.login-register-area{
 .login-register-wrapper .login-register-tab-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
 }
-.login-register-wrapper .login-register-tab-list .nav-item a .h4, .login-register-wrapper .login-register-tab-list .nav-item a h4 {
+.nav-link  {
     color: #000;
-    font-size: 25px;
+    font-size: 25px !important;
     font-weight: 700 !important;
     margin: 0 20px;
     text-transform: capitalize;
@@ -1431,7 +1431,121 @@ section.login-register-area{
     background-color: #a749ff;
     color: #fff;
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    color: #000 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none !important;
+    color: #a749ff !important;
+}
 /* 
 ===================================================
                     LOGIN REGISTER PAGE END
+=================================================== */
+/*
+===================================================
+                    MY ACCOUNT PAGE 
+=================================================== */
+.myaccount-wrapper .accordion-item {
+    border: 1px solid #ebebeb;
+    margin-bottom: 20px;
+}
+.accordion-header {
+    margin-bottom: 0;
+}
+.myaccount-wrapper .accordion-button {
+    background-color: #f9f9f9;
+    color: #242424;
+    display: block;
+    font-size: 15px;
+    font-weight: 500 !important;
+    margin: 0;
+    padding: 16px 55px !important;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 37px;
+}
+.myaccount-wrapper .accordion-button span {
+    color: #242424;
+    font-size: 15px;
+    left: 20px;
+    position: absolute;
+    top: 16px;
+}
+.myaccount-wrapper .accordion-button:hover {
+    color: #a749ff;
+}
+.accordion-button:not(.collapsed){
+    background-color: #f9f9f9 !important;
+}
+.myaccount-wrapper .accordion-button:before {
+    color: #000 !important;
+    content: "";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 19px;
+}
+.single-my-account .myaccount-info-wrapper {
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.single-my-account .myaccount-info-wrapper .account-info-wrapper {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 28px;
+    padding-bottom: 30px;
+}
+.single-my-account .myaccount-info-wrapper .account-info-wrapper h4 {
+    font-size: 15px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.single-my-account .myaccount-info-wrapper .account-info-wrapper h5 {
+    font-size: 16px;
+    letter-spacing: .2px;
+    margin-top: 7px;
+}
+.single-my-account .myaccount-info-wrapper .billing-info {
+    margin-bottom: 20px;
+}
+.single-my-account .myaccount-info-wrapper .billing-info label {
+    color: #000;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.single-my-account .myaccount-info-wrapper .billing-info input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    color: #000;
+    height: 40px;
+    padding: 0 15px;
+}
+.single-my-account .myaccount-info-wrapper .billing-back-btn {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 26px;
+}
+.single-my-account .myaccount-info-wrapper .billing-back-btn .billing-btn button {
+    background-color: #f2f2f2;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500 !important;
+    line-height: 1;
+    padding: 16px 35px 17px;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+}
+.single-my-account .myaccount-info-wrapper .billing-back-btn .billing-btn button:hover {
+    background: #a749ff;
+    color: #fff;
+}
+/*
+===================================================
+                    MY ACCOUNT PAGE END
 =================================================== */
