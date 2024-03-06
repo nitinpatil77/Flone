@@ -1556,6 +1556,53 @@ section.login-register-area{
 section.checkout-area{
     padding: 95px 0px 100px;
 }
+.billing-info-wrap h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500 !important;
+    margin: 0 0 20px;
+}
+.billing-info-wrap .billing-info label, .billing-info-wrap .billing-select label {
+    color: #000;
+    margin: 0 0 7px;
+}
+.billing-info-wrap .billing-info input, .billing-info-wrap .billing-select input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.billing-info-wrap .billing-select select {
+    appearance: none;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    height: 45px;
+    padding: 2px 20px;
+}
+.billing-info-wrap .billing-info input.billing-address, .billing-info-wrap .billing-select input.billing-address {
+    margin-bottom: 10px;
+}
+.billing-info-wrap .additional-info-wrap .additional-info label {
+    color: #333;
+    font-size: 14px;
+    margin: 0 0 7px;
+}
+.billing-info-wrap .additional-info-wrap .additional-info textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    font-size: 14px;
+    height: 138px;
+    padding: 17px 20px;
+}
+.additional-info {
+    display: flex;
+    flex-direction: column;
+}
 /*
 ===================================================
                     CHECK OUT PAGE END
