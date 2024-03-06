@@ -23,10 +23,10 @@ fetch(apiUrl)
         let { id, name, price, discount, newP, rating, product_main_img } = item;
         const discountedPrice = price - price * (discount / 100);
 
-        if (count == 8) {
-          return;
-        }
-        count++;
+        // if (count == 8) {
+        //   return;
+        // }
+        // count++;
         return `
         
               <div class="col-xl-4 col-sm-6">

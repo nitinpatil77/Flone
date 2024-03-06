@@ -177,4 +177,8 @@
   .login-form-container {
         padding: 40px 15px;
     }
+    
+    section.checkout-area{
+        padding: 55px 0px 60px;
+    }
 }
