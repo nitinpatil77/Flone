@@ -1610,7 +1610,7 @@ textarea::placeholder {
 .your-order-area .h3, .your-order-area h3 {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 500 !important;
     margin: 0 0 20px;
 }
 .your-order-area .your-order-wrap {
@@ -1641,7 +1641,7 @@ textarea::placeholder {
     border-radius: 50px;
     color: #fff;
     display: block;
-    font-weight: 500;
+    font-weight: 500 !important;
     letter-spacing: 1px;
     line-height: 1;
     padding: 18px 20px;

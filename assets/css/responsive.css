@@ -66,6 +66,9 @@
     .product-details-content .pro-details-quality .pro-details-cart a, .product-details-content .pro-details-quality .pro-details-cart button {
         padding: 22px;
     }
+    .your-order-area {
+        margin-top: 30px 
+    }
 }
 @media only screen and (max-width: 767px){
     .container-fluid{
@@ -174,11 +177,13 @@
     section.login-register-area{
         padding: 60px 0px;
     }
-  .login-form-container {
+    .login-form-container {
         padding: 40px 15px;
     }
-    
     section.checkout-area{
         padding: 55px 0px 60px;
+    }
+    .your-order-area {
+        margin-top: 30px;
     }
 }
