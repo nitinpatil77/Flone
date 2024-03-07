@@ -1603,6 +1603,10 @@ section.checkout-area{
     display: flex;
     flex-direction: column;
 }
+textarea::placeholder {
+    font-size: 14px;
+    color: #333;
+}
 /*
 ===================================================
                     CHECK OUT PAGE END
