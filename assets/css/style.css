@@ -1607,6 +1607,52 @@ textarea::placeholder {
     font-size: 14px;
     color: #333;
 }
+.your-order-area .h3, .your-order-area h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.your-order-area .your-order-wrap {
+    background: #f6f6f6;
+    padding: 38px 45px 44px;
+}
+.your-order-area .your-order-wrap .your-order-product-info .your-order-top ul li {
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none outside none;
+}
+.your-order-area .your-order-wrap .your-order-product-info .your-order-middle {
+    border-bottom: 1px solid #dee0e4;
+    border-top: 1px solid #dee0e4;
+    margin: 29px 0;
+    padding: 19px 0 18px;
+}
+.your-order-area .your-order-wrap .your-order-product-info .your-order-total {
+    border-bottom: 1px solid #dee0e4;
+    border-top: 1px solid #dee0e4;
+    margin: 18px 0 33px;
+    padding: 17px 0 19px;
+}
+.your-order-area .place-order>button {
+    background: none;
+    background-color: #a749ff;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 18px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 9;
+}
+.your-order-area .place-order>button:hover {
+    background-color: #333;
+}
 /*
 ===================================================
                     CHECK OUT PAGE END
