@@ -1365,7 +1365,7 @@ section.login-register-area{
     background: none;
     padding: 0;
 }
-.login-register-wrapper .login-register-tab-list .nav-item:before {
+.login-register-wrapper .login-register-tab-list .nav-item #home-tab:before {
     background-color: #454545;
     bottom: 5px;
     content: "";
@@ -1375,6 +1375,7 @@ section.login-register-area{
     right: -2px;
     transition: all .4s ease 0s;
     width: 1px;
+    bottom: 10px;
 }
 .login-form-container {
     background: transparent none repeat scroll 0 0;

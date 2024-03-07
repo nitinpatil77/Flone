@@ -72,3 +72,24 @@ select:focus-visible {
 .mt-50{
     margin-top: 50px;
 }
+
+:focus-visible {
+    outline: none !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    /* isolation: isolate; */
+    border:none !important;
+}
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow:none !important;
+}
+.nav-tabs .nav-link {
+    margin-bottom: 0px !important;
+    border: none !important;
+    border-radius: 0px !important;
+    /* margin-bottom: calc(-1* var(--bs-nav-tabs-border-width)); */
+    /* border: var(--bs-nav-tabs-border-width) solid transparent; */
+    /* border-top-left-radius: var(--bs-nav-tabs-border-radius); */
+    /* border-top-right-radius: var(--bs-nav-tabs-border-radius); */
+}
