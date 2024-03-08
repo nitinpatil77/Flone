@@ -163,4 +163,16 @@ function decrease(id) {
   }
 }
 
-//
+// 
+
+let checkoutbtn=document.getElementById('Checkout-btn');
+
+checkoutbtn.addEventListener('click',()=>{
+  var currentUser = JSON.parse(localStorage.getItem('currentUser')) || [];
+      if(currentUser.length>0){
+        window.location.href='checkout.html';
+      }
+      else{
+        window.location.href='login-register.html';
+      }
+})
