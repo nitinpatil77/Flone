@@ -31,7 +31,17 @@
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    .header-padding-1>.container-fluid {
+        padding: 0 40px;
+    }
+    .logo,.header-right-wrap {
+        margin-top: 0px;
+    }
+    .header-res-padding {
+        padding: 20px 0 15px !important;
+    }
     /* slider */
+
     .slider-height-1 {
         height: 450px;
     }

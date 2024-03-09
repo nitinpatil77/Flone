@@ -1658,3 +1658,115 @@ textarea::placeholder {
 ===================================================
                     CHECK OUT PAGE END
 =================================================== */
+
+/*
+===================================================
+                    OFF CANVAS HEADER
+=================================================== */
+.offcanvas-mobile-menu.active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.offcanvas-mobile-menu {
+    height: 100vh;
+    max-width: 100%;
+    padding-left: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: .6s;
+    width: 400px;
+    z-index: 999999999999;
+}
+.offcanvas-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 87px 0 rgba(0,0,0,.09);
+    height: 100%;
+    overflow: auto;
+}
+.offcanvas-inner-content {
+    height: 100%;
+    padding: 90px 35px 0;
+}
+.offcanvas-mobile-search-area {
+    background-color: #e6e6e6;
+    left: 0;
+    margin-left: 60px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 60px);
+    z-index: 9;
+}
+.offcanvas-menu-close {
+    background: #343538;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    height: 65px;
+    left: 0;
+    line-height: 70px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 60px;
+    z-index: 9;
+}
+.offcanvas-mobile-search-area input {
+    background: #e6e6e6;
+    border: none;
+    color: #222;
+    display: block;
+    font-size: 16px;
+    padding: 9px 25px;
+    width: 100%;
+}
+
+.offcanvas-mobile-search-area button {
+    background: none;
+    border: none;
+    color: #aaa;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.offcanvas-navigation>ul li>a {
+    color: #111;
+    display: block;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.offcanvas-navigation>ul li>a:hover {
+    color: #a749ff;
+}
+.offcanvas-navigation ul li.menu-item-has-children .menu-expand {
+    cursor: pointer;
+    height: 50px;
+    left: 95%;
+    line-height: 50px;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    top: -5px;
+    width: 30px;
+}
+.offcanvas-navigation ul.sub-menu {
+    margin-left: 25px !important;
+    transition: .3s;
+}
+.offcanvas-navigation ul.sub-menu>li>a {
+    font-size: 13px;
+    font-weight: 400 !important;
+    padding: 10px 0;
+}
+/*
+===================================================
+                    OFF CANVAS HEADER END
+=================================================== */
