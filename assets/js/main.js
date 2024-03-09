@@ -43,3 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
         offcanvasMobileMenu.classList.remove('active');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuExpands = document.querySelectorAll('.menu-expand');
+
+    menuExpands.forEach(function(menuExpand) {
+        menuExpand.addEventListener('click', function() {
+            var subMenu = this.nextElementSibling;
+            subMenu.classList.toggle('active');
+        });
+    });
+});

@@ -1766,6 +1766,14 @@ textarea::placeholder {
     font-weight: 400 !important;
     padding: 10px 0;
 }
+.sub-menu {
+    display: none;
+}
+
+.sub-menu.active {
+    display: block;
+}
+
 /*
 ===================================================
                     OFF CANVAS HEADER END
