@@ -1773,6 +1773,25 @@ textarea::placeholder {
 .sub-menu.active {
     display: block;
 }
+.animated {
+    animation-name: slideInFromBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
 
 /*
 ===================================================
