@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@
         integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- header -->
     <header class="position-relative">
@@ -41,7 +43,7 @@
                                     <li><a href="./shop.html">Shop</a></li>
                                     <li><a href="./shop.html">Collection</a></li>
                                     <li>
-                                        <a href="./index.html">Pages</a>
+                                        <a href="#">Pages</a>
                                         <ul class="submenu">
                                             <li><a href="/cart.html">Cart</a></li>
                                             <li><a href="/checkout.html">Checkout</a></li>
@@ -50,7 +52,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="#">Blog</a></li>
-                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="./login-register.html">Contact Us</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -150,7 +152,7 @@
                                         <ul class="sub-menu">
                                             <li><a href="./cart.html">Cart</a></li>
                                             <li><a href="./checkout.html">checkout</a></li>
-                                            <li><a href="./login-register.html">Login</a></li>
+                                            <li><a href="./contact.html">Contact Us</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children d-block position-relative">
@@ -166,147 +168,25 @@
     </header>
     <!-- header end -->
     <main>
-         <!-- breadcrumb -->
-         <section class="breadcrumb-area">
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center m-0">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
                     </ol>
                 </nav>
             </div>
         </section>
-        <!-- breadcrumb end -->
-        <!-- shop area -->
-        <section class="shop-area">
+        <!-- breadcrumb-area end-->
+        <section class="contact-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="product-large-image-wrapper position-relative">
-                            <div class="product-img-badges">
-                                <span class="pink">-10%</span>
-                            </div>
-                            <div class="swiper-wrap">
-                                <div class="single-image"><img src="./assets/img/product/fashion/1.jpg" class="img-fluid" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="product-details-content ml-70">
-                            <h2>Lorem ipsum jacket</h2>
-                            <div class="product-details-price">
-                                <span>$11.2</span> 
-                                <span class="old">$12.45</span>
-                            </div>
-                            <div class="pro-details-rating-wrap">
-                                <div class="pro-details-rating">
-                                    <i class="bi bi-star"></i>
-                                    <i class="bi bi-star"></i>
-                                    <i class="bi bi-star"></i>
-                                    <i class="bi bi-star"></i>
-                                    <i class="bi bi-star"></i>
-                                </div>
-                            </div>
-                            <div class="pro-details-list">
-                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                            </div>
-                            <div class="pro-details-size-color d-flex">
-                                <div class="pro-details-color-wrap">
-                                    <span>Color</span>
-                                    <div class="pro-details-color-content">
-                                        <label class="pro-details-color-content--single white">
-                                            <input type="radio" name="product-color" value="white" checked="">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="pro-details-color-content--single black">
-                                            <input type="radio" name="product-color" value="black">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="pro-details-color-content--single brown">
-                                            <input type="radio" name="product-color" value="brown">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="pro-details-size">
-                                    <span>Size</span>
-                                    <div class="pro-details-size-content">
-                                        <label class="pro-details-size-content--single">
-                                            <input type="radio" value="x" checked="">
-                                            <span class="size-name">x</span>
-                                        </label>
-                                        <label class="pro-details-size-content--single">
-                                            <input type="radio" value="m">
-                                            <span class="size-name">m</span>
-                                        </label>
-                                        <label class="pro-details-size-content--single">
-                                            <input type="radio" value="xl">
-                                            <span class="size-name">xl</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pro-details-quality">
-                                <div class="cart-plus-minus">
-                                    <button class="dec qtybutton">-</button>
-                                    <input class="cart-plus-minus-box" type="text" readonly="" value="1">
-                                    <button class="inc qtybutton">+</button>
-                                </div>
-                                <div class="pro-details-cart btn-hover">
-                                    <button> Add To Cart </button>
-                                </div>
-                                <div class="pro-details-wishlist">
-                                    <button class="" title="Add to wishlist">
-                                        <i class="bi bi-suit-heart"></i>
-                                    </button>
-                                </div>
-                                <div class="pro-details-compare">
-                                    <button class="" title="Add to compare">
-                                        <i class="bi bi-shuffle"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="pro-details-meta d-flex">
-                                <span>Categories :</span>
-                                <ul>
-                                    <li><a href="#">fashion</a></li>
-                                    <li><a href="#">men</a></li>
-                                </ul>
-                            </div>
-                            <div class="pro-details-meta d-flex">
-                                <span>Tags :</span>
-                                <ul><li><a href="#">fashion</a></li>
-                                    <li><a href="#">men</a></li>
-                                    <li><a href="#">jacket</a></li>
-                                    <li><a href="#">full sleeve</a></li>
-                                </ul>
-                            </div>
-                            <div class="pro-details-social">
-                                <ul class="d-flex">
-                                    <li>
-                                        <a href="//facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="//dribbble.com"><i class="fa-brands fa-dribbble"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="//pinterest.com"><i class="fa-brands fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="//twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="//linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact-map mb-10">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86296.20287667666!2d-122.19281079996874!3d47.475177457231794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710081417822!5m2!1sen!2sin" width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
-        <!-- shop area end -->
     </main>
     <!-- footer -->
     <footer class="footer-area position-relative">
@@ -396,7 +276,8 @@
     </footer>
     <!-- footer end -->
     <!-- script -->
-    
+
+    <script src="./assets/js/shop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
