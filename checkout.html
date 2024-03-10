@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-6 col-4">
                         <div class="logo">
-                            <a href="/index.html">
+                            <a href="./index.html">
                                 <img src="./assets/img/logo/logo.png" alt="logo">
                             </a>
                         </div>
@@ -38,12 +38,20 @@
                         <div class="main-menu">
                             <nav>
                                 <ul>
-                                    <li><a href="/index.html">Home</a></li>
+                                    <li><a href="./index.html">Home</a></li>
                                     <li><a href="./shop.html">Shop</a></li>
                                     <li><a href="./shop.html">Collection</a></li>
-                                    <li><a href="./cart.html">Pages</a></li>
-                                    <li><a href="./index.html">Blog</a></li>
-                                    <li><a href="./index.html">Contact Us</a></li>
+                                    <li>
+                                        <a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="/cart.html">Cart</a></li>
+                                            <li><a href="/checkout.html">Checkout</a></li>
+                                            <li><a href="/login-register.html">Login</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="./login-register.html">Contact Us</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -66,6 +74,7 @@
                             <div class="same-style account-setting d-none d-lg-block">
                                 <button class="account-setting-active">
                                     <i class="fa-regular fa-user"></i>
+                                    <h6 id="user"></h6>
                                 </button>
                                 <!-- <div class="account-dropdown">
                                     <ul>
