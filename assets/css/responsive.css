@@ -210,6 +210,9 @@
     }
     /*login-register page end*/
     /* contact page */
+    section.contact-area{
+        padding: 60px 0px;
+    }
     .contact-info-wrap {
         margin-bottom: 30px;
         margin-top: 20px;

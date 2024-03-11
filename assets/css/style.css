@@ -1784,6 +1784,30 @@ section.contact-area{
     background-color: #f3f3f3;
     padding: 50px 110px;
 }
+.contact-form .contact-form-style input, .contact-form .contact-form-style textarea {
+    background: transparent;
+    border: 1px solid #c1c1c1;
+    color: #000;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 2px 14px;
+}
+.contact-form .contact-form-style textarea {
+    height: 175px;
+    margin-bottom: 0;
+    padding: 20px 14px;
+}
+.contact-form .contact-form-style button {
+    background-color: #404040;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 38px;
+    padding: 15px 52px;
+    text-transform: uppercase;
+}
 /*
 ===================================================
                     CONTACT US PAGE END
