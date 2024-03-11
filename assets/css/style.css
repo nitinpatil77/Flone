@@ -1724,6 +1724,66 @@ textarea::placeholder {
 section.contact-area{
     padding: 100px 0px;
 }
+.custom-row-2 div[class^=col-] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.contact-info-wrap {
+    background-color: #f3f3f3;
+    padding: 120px 70px 116px 90px;
+}
+.contact-info-wrap .single-contact-info {
+    margin-bottom: 40px;
+}
+.contact-info-wrap .single-contact-info .contact-info-dec p {
+    color: #404040;
+    line-height: 1;
+    margin: 0 0 9px;
+}
+.contact-info-wrap .single-contact-info .contact-icon {
+    margin-right: 20px;
+}
+.contact-info-wrap .single-contact-info .contact-icon i {
+    border: 1px solid #252525;
+    border-radius: 100%;
+    color: #252525;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all .3s ease 0s;
+    width: 40px;
+}
+.contact-info-wrap .single-contact-info:hover .contact-icon i {
+    background-color: #252525;
+    color: #fff;
+}
+.contact-info-wrap .single-contact-info .contact-info-dec p a {
+    color: #404040;
+}
+.contact-social {
+    margin-top: 58px;
+}
+.contact-social h3 {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 500 !important;
+    line-height: 1;
+    margin: 0 0 17px;
+}
+.contact-social ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.contact-social ul li a {
+    color: #4d4d4d;
+    font-size: 16px;
+}
+.contact-form {
+    background-color: #f3f3f3;
+    padding: 50px 110px;
+}
 /*
 ===================================================
                     CONTACT US PAGE END

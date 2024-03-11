@@ -29,6 +29,12 @@
     .login-form-container {
         padding: 80px 50px;
     }
+    .contact-form {
+        padding: 50px;
+    }
+    .contact-info-wrap {
+        padding: 120px 20px 116px 40px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .header-padding-1>.container-fluid {
@@ -78,6 +84,12 @@
     }
     .your-order-area {
         margin-top: 30px 
+    }
+    .contact-info-wrap {
+        padding: 120px 20px 116px 30px;
+    }
+    .contact-form {
+        padding: 50px 30px;
     }
 }
 @media only screen and (max-width: 767px){
@@ -196,4 +208,15 @@
     .your-order-area {
         margin-top: 30px;
     }
+    /*login-register page end*/
+    /* contact page */
+    .contact-info-wrap {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        padding: 50px 20px 45px 30px;
+    }
+    .contact-form {
+        padding: 50px 30px;
+    }
+    /* contact page end*/
 }
