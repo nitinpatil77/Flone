@@ -32,7 +32,7 @@ window.onload = () => {
   } else {
     document.getElementById("empty-cart").style.display = "none";
     addtocartPage();
-    document.getElementsByClassName("cart")[0].innerHTML = productJSON.length;
+    document.getElementsByClassName("cart").innerHTML = productJSON.length;
   }
 };
 
