@@ -2,8 +2,10 @@ var productJSON = [];
 
 window.onload = () => {
   productJSON = JSON.parse(localStorage.getItem("cartItems")) || [];
- 
+  
   var len = productJSON.length;
+  console.log(len);
+
   /* Bill Calculation */
   var grand_total = 0;
   var sum = 0;
@@ -32,7 +34,7 @@ window.onload = () => {
   } else {
     document.getElementById("empty-cart").style.display = "none";
     addtocartPage();
-    document.getElementsByClassName("cart").innerHTML = productJSON.length;
+    document.getElementsByClassName("cart")[0].innerHTML = productJSON.length;
   }
 };
 
