@@ -74,7 +74,9 @@ fetch(apiUrl)
                         ${
                           discount ?`<span class="new">$${discountedPrice.toFixed(2)}</span>`:""
                         }    
-                        <span class="old">$${price}</span>
+                        ${
+                          discount ?`<span class="old">$${price}</span>`:`<span class="new">$${price}</span>`
+                        }  
                       </div>
                   </div>     
                 </div>
