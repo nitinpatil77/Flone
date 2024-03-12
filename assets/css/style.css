@@ -1033,7 +1033,7 @@ select {
     background-color: #a749ff;
     border: none;
     border-radius: 50px;
-    color: #fff;
+    color: #fff ;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500 !important;
@@ -1132,7 +1132,7 @@ h4.grand-totall-title {
 .grand-totall a {
     background-color: #a749ff;
     border-radius: 50px;
-    color: #fff;
+    color: #fff !important;
     display: block;
     font-size: 14px;
     font-weight: 500;

@@ -17,7 +17,7 @@ fetch(apiUrl)
     let singlePage = document.getElementById("singlePage");
     var count = 0;
     Api.forEach((product) => {
-        let { id, name, price, discount, newP, rating, product_main_img } = product;
+        let { id, name, price, discount, newP, rating, product_main_img,subDescrption } = product;
         if(id === singleItemId){
             
             singlePage.innerHTML =`
@@ -50,15 +50,11 @@ fetch(apiUrl)
                     </div>
                     <div class="pro-details-rating-wrap">
                         <div class="pro-details-rating">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
+                            ${generateStars(rating)}
                         </div>
                     </div>
                     <div class="pro-details-list">
-                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                        <p>${subDescrption}</p>
                     </div>
                     <div class="pro-details-size-color d-flex">
                         <div class="pro-details-color-wrap">
@@ -158,3 +154,24 @@ fetch(apiUrl)
     });
 })
 .catch((error) => console.log(error));
+
+
+
+// Rating
+function generateStars(rating) {
+    const filledStars = Math.floor(rating);
+    const halfStar = rating - filledStars >= 0.5 ? 1 : 0;
+    const emptyStars = 5 - filledStars - halfStar;
+  
+    let starsHTML = "";
+    for (let i = 0; i < filledStars; i++) {
+      starsHTML += `<i class="fa-regular fa-star" style="color: #ffa900;"></i>`;
+    }
+    if (halfStar) {
+      starsHTML += `<i class="fa-regular fa-star-half-alt" style="color: #ffa900;"></i>`;
+    }
+    for (let i = 0; i < emptyStars; i++) {
+      starsHTML += `<i class="far fa-star"></i>`;
+    }
+    return starsHTML;
+  }
