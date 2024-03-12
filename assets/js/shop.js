@@ -34,7 +34,7 @@ fetch(apiUrl)
               <div class="col-xl-4 col-sm-6">
                 <div class="product-card position-relative">
                   <div class="product-img">
-                      <a href="#" id="">
+                      <a href="#" id="" onclick="singleProduct(${id})">
                           <img src="${product_main_img[0]}" alt="product-img" class="default-img">
                           <img src="${product_main_img[1]}" alt="product-img" class="hover-img">
                       </a>
@@ -69,7 +69,7 @@ fetch(apiUrl)
                       </div>
                   </div>
                   <div class="product-content text-center">
-                      <h3><a href="#" id="">${name}</a></h3>
+                      <h3><a href="#" id="" onclick="singleProduct(${id})">${name}</a></h3>
                       <div class="product-rating">
                           ${generateStars(rating)}
                       </div>
@@ -159,7 +159,7 @@ function searchProduct(data) {
                 <div class="col-xl-4 col-sm-6">
                   <div class="product-card position-relative">
                     <div class="product-img">
-                        <a href="#" id="">
+                        <a href="#" id="" onclick="singleProduct(${id})">
                             <img src="${product_main_img[0]}" alt="product-img" class="default-img">
                             <img src="${product_main_img[1]}" alt="product-img" class="hover-img">
                         </a>
@@ -194,7 +194,7 @@ function searchProduct(data) {
                         </div>
                     </div>
                     <div class="product-content text-center">
-                        <h3><a href="#" id="">${name}</a></h3>
+                        <h3><a href="#" id="" onclick="singleProduct(${id})">${name}</a></h3>
                         <div class="product-rating">
                             ${generateStars(rating)}
                         </div>
@@ -214,4 +214,13 @@ function searchProduct(data) {
       Product();
 
   });
+}
+
+// single page product
+
+let singleProduct=(id)=>{
+  console.log(id);
+    localStorage.setItem('singleItemId',JSON.stringify(id));
+    window.location.href='single-product.html';
+
 }

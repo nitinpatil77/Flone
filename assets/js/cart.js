@@ -49,7 +49,7 @@ addtocartPage = () => {
       return `
               <tr>
                   <td class="product-thumbnail">
-                      <a href="#">
+                      <a href="#" onclick="singleProduct(${id})">
                           <img class="img-fluid" src="${
                             product_main_img[0]
                           }" alt="">
@@ -176,3 +176,12 @@ checkoutbtn.addEventListener('click',()=>{
         window.location.href='login-register.html';
       }
 })
+
+// single page product
+
+let singleProduct=(id)=>{
+  console.log(id);
+    localStorage.setItem('singleItemId',JSON.stringify(id));
+    window.location.href='single-product.html';
+
+}
