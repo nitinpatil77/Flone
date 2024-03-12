@@ -56,7 +56,7 @@ addtocartPage = () => {
                       </a>
                   </td>
                   <td class="product-name">
-                      <a href="#">${name}</a>
+                      <a href="#" onclick="singleProduct(${id})">${name}</a>
                       <div class="cart-item-variation">
                           <span>Color: white</span>
                           <span>Size: x</span>

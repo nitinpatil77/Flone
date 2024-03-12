@@ -1158,6 +1158,9 @@ h4.grand-totall-title {
 .product-large-image-wrapper .product-img-badges span.pink {
     background-color: #fa6bff;
 }
+.product-large-image-wrapper .product-img-badges span.purple {
+    background-color: #a749ff;
+}
 .product-large-image-wrapper .product-img-badges span {
     border-radius: 3px;
     color: #fff;
@@ -1167,6 +1170,7 @@ h4.grand-totall-title {
     line-height: 1;
     margin-bottom: 10px;
     padding: 3px 11px;
+    text-transform: capitalize;
 }
 .product-large-image-wrapper .product-img-badges {
     left: 20px;
