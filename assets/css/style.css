@@ -1445,6 +1445,101 @@ section.description-review-area{
     margin: 0 26px 0 0;
     min-width: 85px;
 }
+.single-review {
+    display: flex;
+    margin: 0 0 50px;
+}
+.single-review .review-img {
+    flex: 0 0 90px;
+    margin: 0 15px 0 0;
+}
+.single-review .review-top-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px;
+}
+.single-review .review-top-wrap .review-left {
+    display: flex;
+}
+.single-review .review-top-wrap .review-left .review-name {
+    margin-right: 25px;
+}
+.single-review .review-top-wrap .review-left .review-name h4 {
+    font-size: 16px;
+    font-weight: 500 !important;
+    line-height: 1;
+    margin: 0;
+}
+.single-review .review-top-wrap .review-left .review-rating {
+    line-height: 1;
+}
+.single-review .review-top-wrap .review-left .review-rating i {
+    color: #ffa900;
+    font-size: 12px;
+    margin-right: 1px;
+}
+.single-review .review-top-wrap .review-left>button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    padding: 1px 6px;
+}
+.single-review .review-bottom p {
+    margin: 0;
+    width: 93%;
+}
+.single-review.child-review {
+    margin-bottom: 0;
+    margin-left: 70px;
+}
+.ratting-form-wrapper h3 {
+    font-size: 16px;
+    font-weight: 500 !important; 
+    line-height: 1;
+    margin: 0;
+}
+.ratting-form-wrapper .ratting-form form .star-box {
+    display: flex;
+    margin: 6px 0 20px;
+}
+.ratting-form-wrapper .ratting-form form .star-box span {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 15px 0 0;
+}
+.ratting-form-wrapper .ratting-form form .star-box .ratting-star {
+    color: #ffa900;
+    font-size: 12px;
+    margin: 2px 0 0;
+}
+.ratting-form-wrapper .ratting-form form .rating-form-style input, .ratting-form-wrapper .ratting-form form .rating-form-style textarea {
+    background: transparent;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    padding: 2px 10px 2px 20px;
+}
+.ratting-form-wrapper .ratting-form form .rating-form-style textarea {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 10px 2px 20px;
+}
+.ratting-form-wrapper .ratting-form form .form-submit input {
+    background-color: #a749ff;
+    border: 1px solid #a749ff;
+    color: #fff;
+    font-weight: 500;
+    height: auto;
+    padding: 12px 50px;
+    text-transform: uppercase;
+    width: auto;
+}
+section.related-product-area{
+    padding-bottom: 95px;
+}
 /* 
 ===================================================
                     SINGLE PRODUCT PAGE END

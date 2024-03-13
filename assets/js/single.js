@@ -1,5 +1,7 @@
 let singleItemId;
 let addToCart = () => {};
+
+let mainProduct = () => {}; 
 window.onload=()=>{
     singleItemId= JSON.parse(localStorage.getItem("singleItemId"));
 
@@ -26,7 +28,6 @@ fetch(apiUrl)
         let { id, name, price, discount, newP, rating, product_main_img,subDescrption } = product;
         const discountedPrice = price - price * (discount / 100);
         if(id === singleItemId){
-            
             singlePage.innerHTML =`
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -163,6 +164,7 @@ fetch(apiUrl)
             </div>
             `
         }
+    
         var cartItems = [];
     addToCart = (productId) => {
       // Retrieve cart items from localStorage
@@ -182,6 +184,77 @@ fetch(apiUrl)
      };
 
     });
+    let cartPage = document.getElementById("related-product");
+    var count = 0;
+    mainProduct = () => {
+      return (cartPage.innerHTML = Api.map((item) => {
+        let { id, name, price, discount, newP, rating, product_main_img } = item;
+        const discountedPrice = price - price * (discount / 100);
+
+        if (count == 4) {
+          return;
+        }
+        count++;
+        return `
+        
+              <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                <div class="product-card position-relative">
+                  <div class="product-img">
+                      <a href="#" id="" onclick="singleProduct(${id})">
+                          <img src="${product_main_img[0]}" alt="product-img" class="default-img">
+                          <img src="${product_main_img[1]}" alt="product-img" class="hover-img">
+                      </a>
+                      <div class="product-img-badges">
+                          ${
+                            discount
+                              ? `<span class="pink">${discount}%</span>`
+                              : ""
+                          }
+                          ${
+                            newP
+                              ? `<span class="purple">${newP}</span>`
+                              : ""
+                          }
+                      </div>
+                      <div class="product-action d-flex">
+                          <div class="pro-same-action pro-wishlist">
+                              <button class="" title="Add to wishlist">
+                                  <i class="fa-regular fa-heart"></i>
+                              </button>
+                          </div>
+                          <div class="pro-same-action pro-cart">
+                              <button title="Add to cart" onclick="addToCart(${id})"> 
+                                  <i class="bi bi-cart2"></i> Add to cart
+                              </button>
+                          </div>
+                          <div class="pro-same-action pro-quickview">
+                              <button title="Quick View">
+                                  <i class="bi bi-eye"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="product-content text-center">
+                      <h3><a href="#" id="" onclick="singleProduct(${id})">${name}</a></h3>
+                      <div class="product-rating">
+                          ${generateStars(rating)}
+                      </div>
+                      <div class="product-price">
+                        ${
+                          discount ?`<span class="new">$${discountedPrice.toFixed(2)}</span>`:""
+                        }    
+                        ${
+                          discount ?`<span class="old">$${price}</span>`:`<span class="new">$${price}</span>`
+                        }  
+                      </div>
+                  </div>     
+                </div>
+              </div>
+                `;
+      }).join(""));
+
+    };
+    mainProduct();
     
 })
 .catch((error) => console.log(error));
