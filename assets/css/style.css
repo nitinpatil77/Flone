@@ -1403,12 +1403,48 @@ input {
 section.description-review-area{
     padding-bottom: 90px;
 }
-.description-review-topbar .nav-tabs .nav-link {
+.description-review-topbar {
+    border-bottom: 1px solid #d7d7d7;
+    display: flex;
+    justify-content: center;
+}
+.description-review-topbar>.nav-item>.nav-link.active{
     background-color: transparent;
     border-bottom: 3px solid #000 !important;
-    font-weight: 500;
+    
 }
-
+.description-review-topbar>.nav-item>.nav-link.active {
+    color: #000 !important;
+}
+.description-review-topbar>.nav-item>.nav-link {
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    color: #666 !important;
+    font-size: 24px;
+    font-weight: 500 !important;
+    line-height: 1;
+    margin: 0 15px !important;
+    padding: 0 0 13px !important;
+}
+.description-review-bottom {
+    padding: 33px 0 0;
+}
+.tab-content>.active {
+    display: block;
+}
+.description-review-bottom .product-anotherinfo-wrapper ul li {
+    color: #333;
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 0 0 13px;
+}
+.description-review-bottom .product-anotherinfo-wrapper ul li span {
+    color: #000;
+    display: inline-block;
+    font-weight: 500 !important;
+    margin: 0 26px 0 0;
+    min-width: 85px;
+}
 /* 
 ===================================================
                     SINGLE PRODUCT PAGE END

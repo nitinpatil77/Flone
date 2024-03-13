@@ -301,7 +301,7 @@
         <!-- description-review-area -->
         <section class="description-review-area">
             <div class="container">
-                <ul class="description-review-topbar  nav nav-tabs border-0 justify-content-center" id="myTab" role="tablist">
+                <ul class="description-review-topbar  nav nav-tabs  justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active p-0 Reviews" id="home-tab" data-bs-toggle="tab"
                             data-bs-target="#home" type="button" role="tab" aria-controls="home"
@@ -313,11 +313,125 @@
                             aria-selected="false">Description</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link p-0 Reviews" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                            type="button" role="tab" aria-controls="profile"
+                        <button class="nav-link p-0 Reviews" id="review-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="review"
                             aria-selected="false">Reviews(2)</button>
                     </li>
                 </ul>
+                <div class="description-review-bottom  tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="product-anotherinfo-wrapper">
+                            <ul>
+                                <li><span>Weight</span> 400 g</li>
+                                <li><span>Dimensions</span>10 x 10 x 15 cm </li>
+                                <li><span>Materials</span> 60% cotton, 40% polyester</li>
+                                <li><span>Other Info</span> American heirloom jean shorts pug seitan letterpress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                       <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    </div>  
+                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="review-wrapper">
+                                    <div class="single-review">
+                                        <div class="review-img">
+                                            <img src="/assets/img/testimonial/1.jpg" alt="">
+                                        </div>
+                                        <div class="review-content">
+                                            <div class="review-top-wrap">
+                                                <div class="review-left">
+                                                    <div class="review-name">
+                                                        <h4>White Lewis</h4>
+                                                    </div>
+                                                    <div class="review-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="review-left">
+                                                    <button>Reply</button>
+                                                </div>
+                                            </div>
+                                            <div class="review-bottom">
+                                                <p>Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-review child-review">
+                                        <div class="review-img">
+                                            <img src="/assets/img/testimonial/2.jpg" alt="">
+                                        </div>
+                                        <div class="review-content">
+                                            <div class="review-top-wrap">
+                                                <div class="review-left">
+                                                    <div class="review-name">
+                                                        <h4>White Lewis</h4>
+                                                    </div>
+                                                    <div class="review-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="review-left">
+                                                    <button>Reply</button>
+                                                </div>
+                                            </div>
+                                            <div class="review-bottom">
+                                                <p>Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratting-form-wrapper pl-50">
+                                    <h3>Add a Review</h3>
+                                    <div class="ratting-form">
+                                        <form action="#">
+                                            <div class="star-box">
+                                                <span>Your rating:</span>
+                                                <div class="ratting-star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="rating-form-style mb-10">
+                                                        <input placeholder="Name" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="rating-form-style mb-10">
+                                                        <input placeholder="Email" type="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="rating-form-style form-submit">
+                                                        <textarea name="Your Review" placeholder="Message"></textarea>
+                                                        <input type="submit">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
