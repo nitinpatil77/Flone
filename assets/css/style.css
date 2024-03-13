@@ -1400,6 +1400,9 @@ input {
 .product-details-content .pro-details-social ul li a:hover,.product-details-content .pro-details-quality .pro-details-compare button {
     color: #a749ff;
 }
+section.description-review-area{
+    padding-bottom: 90px;
+}
 /* 
 ===================================================
                     SINGLE PRODUCT PAGE END

@@ -222,4 +222,7 @@
         padding: 50px 30px;
     }
     /* contact page end*/
+    section.description-review-area{
+        padding-bottom: 50px;
+    }
 }
