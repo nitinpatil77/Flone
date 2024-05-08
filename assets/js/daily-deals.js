@@ -102,6 +102,7 @@ fetch(apiUrl)
       // Update the cart count display
       document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
      };
+     
   })
   .catch((error) => console.log(error));
 

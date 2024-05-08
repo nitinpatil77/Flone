@@ -2103,3 +2103,31 @@ section.contact-area{
 ===================================================
                     OFF CANVAS HEADER END
 =================================================== */
+
+/* 
+===================================================
+                    WISHLIST PAGE CSS START
+=================================================== */
+
+.cart-table-content table tbody>tr td.product-wishlist-cart>a, .cart-table-content table tbody>tr td.product-wishlist-cart>button {
+    background: none;
+    background-color: #a749ff;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+.cart-table-content table tbody>tr td.product-wishlist-cart>button:hover {
+    background-color: #333;
+}
+/* 
+===================================================
+                    WISHLIST PAGE CSS END
+=================================================== */
+
