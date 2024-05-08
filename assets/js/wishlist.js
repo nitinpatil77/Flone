@@ -77,14 +77,14 @@ addtocartPage = () => {
 // remove item
 let removeItem = (index) => {
   window.location.reload();
-  productJSON = JSON.parse(localStorage.getItem("cartItems")) || [];
+  productJSON = JSON.parse(localStorage.getItem("wishlist")) || [];
 
   for (let i = 0; i < productJSON.length; i++) {
     if (productJSON[i].id === index) {
       productJSON.splice(i, 1);
       document.getElementsByClassName("cart")[0].innerHTML = productJSON.length;
       //new data set on local storage
-      localStorage.setItem("cartItems", JSON.stringify(productJSON)) || [];
+      localStorage.setItem("wishlist", JSON.stringify(productJSON)) || [];
       if (productJSON.length === 0) {
         document.getElementById("empty-cart").style.display = "block";
         document.getElementById("full-fill-cart").style.display = "none";
@@ -98,60 +98,19 @@ let removeItem = (index) => {
 // remove all product
 
 let removeAllItem = () => {
-  productJSON = JSON.parse(localStorage.getItem("cart")) || [];
+  productJSON = JSON.parse(localStorage.getItem("wishlist")) || [];
   productJSON = [];
-  localStorage.setItem("cartItems", JSON.stringify(productJSON)) || [];
-  document.getElementsByClassName("cart")[0].innerHTML = productJSON.length;
+  localStorage.setItem("wishlist", JSON.stringify(productJSON)) || [];
+  document.getElementsByClassName("wish")[0].innerHTML = productJSON.length;
   if (productJSON.length === 0) {
-    document.getElementById("empty-cart").style.display = "block";
-    document.getElementById("full-fill-cart").style.display = "none";
+    document.getElementById("empty-list").style.display = "block";
+    document.getElementById("full-fill-list").style.display = "none";
   } else {
     addtocartPage();
   }
 };
 
 // qty calculation
-
-function increment(id) {
-  productJSON = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-  for (let i = 0; i < productJSON.length; i++) {
-    if (productJSON[i].id === id) {
-      productJSON[i].qty = productJSON[i].qty + 1;
-      var subtotal =
-        productJSON[i].subtotal +
-        productJSON[i].price -
-        productJSON[i].price * (productJSON[i].discount / 100);
-
-      productJSON[i].subtotal = Math.floor(subtotal * 100) / 100;
-
-      localStorage.setItem("cartItems", JSON.stringify(productJSON)) || [];
-      window.location.reload();
-      addtocartPage();
-    }
-  }
-}
-
-function decrease(id) {
-  productJSON = JSON.parse(localStorage.getItem("cartItems")) || [];
-  for (let i = 0; i < productJSON.length; i++) {
-    if (productJSON[i].id === id) {
-      productJSON[i].qty = productJSON[i].qty - 1;
-
-      var subtotal =
-        productJSON[i].subtotal -
-        productJSON[i].price +
-        productJSON[i].price * (productJSON[i].discount / 100);
-
-      productJSON[i].subtotal = Math.floor(subtotal * 100) / 100;
-
-      localStorage.setItem("cartItems", JSON.stringify(productJSON)) || [];
-      window.location.reload();
-      addtocartPage();
-    }
-  }
-}
-
 
 
 // single page product

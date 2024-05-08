@@ -87,6 +87,8 @@ fetch(apiUrl)
 
     };
     mainProduct();
+
+   
     var cartItems = [];
     // add to cart functionality
     addToCart = (productId) => {
@@ -111,7 +113,7 @@ fetch(apiUrl)
       // Retrieve cart items from localStorage
       let wishItem = JSON.parse(localStorage.getItem('wishItem')) || [];
        
-      document.getElementsByClassName("cart")[0].innerHTML = wishItem.length;
+      document.getElementsByClassName("wish")[0].innerHTML = wishItem.length;
       console.log(wishItem.length);
     
       // Push the selected product to the wishItem array

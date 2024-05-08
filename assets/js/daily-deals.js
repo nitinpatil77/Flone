@@ -1,6 +1,7 @@
 
 let mainProduct = () => {}; 
 let addToCart = () => {};
+let addToWish =()=>{};
 window.onload=()=>{
   let storedCartItems = localStorage.getItem('cartItems');
   // If cartItems exist in localStorage, parse it; otherwise, initialize an empty array
@@ -49,7 +50,7 @@ fetch(apiUrl)
                       </div>
                       <div class="product-action d-flex">
                           <div class="pro-same-action pro-wishlist">
-                              <button class="" title="Add to wishlist">
+                              <button class="" title="Add to wishlist" onclick="addToWish(${id})">
                                   <i class="fa-regular fa-heart"></i>
                               </button>
                           </div>
@@ -102,7 +103,27 @@ fetch(apiUrl)
       // Update the cart count display
       document.getElementsByClassName("cart")[0].innerHTML = cartItems.length;
      };
+
+      //  add to wishlist functionality
+    var wishItem=[];
+    addToWish =( productId)=>{
+     // Retrieve cart items from localStorage
+     let wishItem = JSON.parse(localStorage.getItem('wishItem')) || [];
+      
+     document.getElementsByClassName("cart")[0].innerHTML = wishItem.length;
+     console.log(wishItem.length);
+   
+     // Push the selected product to the wishItem array
+     wishItem.push(Api.find((item) => item.id === productId));
      
+     // Save wishItem back to localStorage
+     localStorage.setItem("wishItem", JSON.stringify(wishItem));
+     
+     // Update the cart count display
+     document.getElementsByClassName("wish")[0].innerHTML = wishItem.length;
+    }
+    console.log(wishItem);
+
   })
   .catch((error) => console.log(error));
 
