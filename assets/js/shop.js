@@ -226,3 +226,55 @@ let singleProduct=(id)=>{
     window.location.href='single-product.html';
 
 }
+
+// search products
+
+let search = document.getElementById("serchProduct");
+
+search.addEventListener('change',(e)=>{
+
+   let search_key = e.target.value;
+
+   searchdata(apiUrl);
+
+   async function searchdata(apiUrl ){
+
+      let rowdata = await fetch(apiUrl);
+
+      let data = await rowdata.json();
+
+      Api = data.filter((item)=>{
+
+         if(search_key === ""){
+
+           window.location.reload();
+
+         }else if(search_key === item.name){
+
+             return item;
+
+         }else if(search_key !== ""){
+            
+             let flag = false;
+
+             item.Categories.forEach( categorie=> {
+                 
+                if(search_key === categorie){
+
+                    flag = true;
+                }
+             });
+
+             if(flag == true){
+
+                return item;
+
+             }
+         }
+
+      });
+
+      mainProduct();
+   }
+   
+});

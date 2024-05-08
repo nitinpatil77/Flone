@@ -590,6 +590,15 @@ section.blog{
 .blog-wrap .blog-img {
     overflow: hidden;
     position: relative;
+    transition: all .4s ease;
+}
+.blog-wrap .blog-img img:hover {
+  
+    transform: scale(1.2);
+ }
+.blog-wrap .blog-img {
+    overflow: hidden;
+    position: relative;
 }
 .blog-wrap .blog-img .blog-category-names {
     left: 10px;
