@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +51,6 @@
 
                                         </ul>
                                     </li>
-                                    <!-- <li><a href="#">Blog</a></li> -->
                                     <li><a href="./contact.html">Contact Us</a></li>
                                 </ul>
                             </nav>
@@ -59,38 +59,19 @@
                     <div class="col-xl-2 col-lg-2 col-md-6 col-8">
                         <div class="header-right-wrap">
                             <div class="same-style header-search d-none d-lg-block">
-                                <!-- <button class="search-active">
+                                <button class="search-active">
                                     <i class="bi bi-search"></i>
-                                </button> -->
-                                <!-- <div class="search-content">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search">
-                                        <button class="button-search">
-                                            <i class="pe-7s-search"></i>
-                                        </button>
-                                    </form>
-                                </div> -->
+                                </button>
+                               
                             </div>
                             <div class="same-style account-setting d-none d-lg-block">
                                 <a href="./login-register.html">
                                     <i class="fa-regular fa-user"></i>
                                     <h6 id="user"></h6>
                                 </a>
-                                <!-- <div class="account-dropdown">
-                                    <ul>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="#">Register</a></li>
-                                        <li><a href="#">my account</a></li>
-                                    </ul>
-                                </div> -->
+                            
                             </div>
-                            <!-- <div class="same-style header-compare">
-                                <a href="#">
-                                    <i class="bi bi-shuffle"></i>
-                                    <i class="fa-solid fa-shuffle"></i>
-                                    <span class="count-style">0</span>
-                                </a>
-                            </div> -->
+                           
                             <div class="same-style header-wishlist">
                                 <a href="./wishlist.html">
                                     <i class="bi bi-suit-heart"></i>
@@ -169,6 +150,23 @@
                 </nav>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Your Order Placed</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- breadcrumb end -->
         <section class="checkout-area">
             <div class="container">
@@ -180,7 +178,7 @@
                             </div>
                         </div>
                         <div class="item-empty-area__text  text-center">
-                            No items found in cart to checkout <br> 
+                            No items found in cart to checkout <br>
                             <a href="./shop.html">Shop Now</a>
                         </div>
                     </div>
@@ -224,7 +222,8 @@
                                 <div class="col-lg-12">
                                     <div class="billing-info mb-20">
                                         <label>Street Address</label>
-                                        <input class="billing-address" placeholder="House number and street name" type="text">
+                                        <input class="billing-address" placeholder="House number and street name"
+                                            type="text">
                                         <input placeholder="Apartment, suite, unit etc." type="text">
                                     </div>
                                 </div>
@@ -263,7 +262,8 @@
                                 <h4>Additional information</h4>
                                 <div class="additional-info">
                                     <label>Order notes</label>
-                                    <textarea name="message" id="" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    <textarea name="message" id="" cols="30" rows="10"
+                                        placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -279,13 +279,8 @@
                                             <li>Total</li>
                                         </ul>
                                     </div>
-                                    <div class="your-order-middle">
-                                        <ul>
-                                            <li class="d-flex justify-content-between">
-                                                <span class="order-middle-left">Lorem ipsum jacket X 1</span>
-                                                <span class="order-price">€10.47</span>
-                                            </li>
-                                        </ul>
+                                    <div class="your-order-middle" id="your-order-middle">
+
                                     </div>
                                     <div class="your-order-bottom">
                                         <ul class="d-flex justify-content-between">
@@ -293,17 +288,17 @@
                                             <li>Free shipping</li>
                                         </ul>
                                     </div>
-                                    <div class="your-order-total">
-                                        <ul class="d-flex justify-content-between">
-                                            <li class="order-total">Total</li>
-                                            <li>€10.47</li>
-                                        </ul>
+                                    <div class="your-order-total" id="your-order-total">
+
                                     </div>
                                 </div>
                                 <div class="payment-method"></div>
                             </div>
                             <div class="place-order mt-25">
-                                <button class="btn-hover">Place Order</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    place order
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -399,7 +394,7 @@
     </footer>
     <!-- footer end -->
     <!-- script -->
-    
+
     <script src="./assets/js/shop.js"></script>
     <script src="./assets/js/checkout.js"></script>
     <script src="./assets/js/main.js"></script>

@@ -64,7 +64,7 @@ addtocartPage = () => {
                         onclick="addToCart(${id})">Added to cart</button>
                 </td>
                 <td class="product-remove">
-                    <button><i class="fa fa-times"></i></button>
+                    <button onclick="removeItem(${id})"><i class="fa fa-times"></i></button>
                 </td>
             </tr> 
           `;
@@ -77,14 +77,14 @@ addtocartPage = () => {
 // remove item
 let removeItem = (index) => {
   window.location.reload();
-  productJSON = JSON.parse(localStorage.getItem("wishlist")) || [];
+  productJSON = JSON.parse(localStorage.getItem("wishItem")) || [];
 
   for (let i = 0; i < productJSON.length; i++) {
     if (productJSON[i].id === index) {
       productJSON.splice(i, 1);
-      document.getElementsByClassName("cart")[0].innerHTML = productJSON.length;
+      document.getElementsByClassName("wish")[0].innerHTML = productJSON.length;
       //new data set on local storage
-      localStorage.setItem("wishlist", JSON.stringify(productJSON)) || [];
+      localStorage.setItem("wishItem", JSON.stringify(productJSON)) || [];
       if (productJSON.length === 0) {
         document.getElementById("empty-cart").style.display = "block";
         document.getElementById("full-fill-cart").style.display = "none";
@@ -98,9 +98,9 @@ let removeItem = (index) => {
 // remove all product
 
 let removeAllItem = () => {
-  productJSON = JSON.parse(localStorage.getItem("wishlist")) || [];
+  productJSON = JSON.parse(localStorage.getItem("wishItem")) || [];
   productJSON = [];
-  localStorage.setItem("wishlist", JSON.stringify(productJSON)) || [];
+  localStorage.setItem("wishItem", JSON.stringify(productJSON)) || [];
   document.getElementsByClassName("wish")[0].innerHTML = productJSON.length;
   if (productJSON.length === 0) {
     document.getElementById("empty-list").style.display = "block";
