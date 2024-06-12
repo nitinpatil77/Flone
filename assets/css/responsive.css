@@ -124,9 +124,17 @@
         padding: 50px 30px;
     }
 
-    .ratting-form-wrapper.pl-50 {
-        margin-top: 50px;
-        padding-left: 0;
+    /* shop page */
+    .sidebar-widget-list ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 25px;
+    }
+
+    div#shopPage {
+        min-height: 700px; /* need to delete pagination */
     }
 }
 
@@ -228,6 +236,10 @@
         margin: 5px 0 10px;
     }
 
+    div#shopPage {
+        min-height: 400px;   /* need to delete pagination */
+    }
+
     /* shop end */
     /* cart */
     section.cart-main-area {
@@ -304,24 +316,15 @@
         padding-bottom: 50px;
     }
 
-    .single-review.child-review {
-        margin-left: 0;
+    /* blog single page */
+
+    .dec-img{
+      margin-top: 30px;
     }
 
-    .ratting-form-wrapper.pl-50 {
-        margin-top: 50px;
-        padding-left: 0;
+    #email-input{
+        margin-top:25px;
     }
 
-    .description-review-topbar>.nav-item>.nav-link {
-        font-size: 15px !important;
-        margin: 0 4px 15px !important;
-        padding: 0 0 8px !important;
-    }
-    section.related-product-area{
-        padding-bottom: 55px;
-    }
-    .section-title.mb-50 {
-        margin-bottom: 30px;
-    }
+   
 }

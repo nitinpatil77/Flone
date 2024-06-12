@@ -36,9 +36,6 @@ input {
 select:focus-visible {
     outline: none !important;
 }
-.pl-50{
-    padding-left: 50px;
-}
 .mb-20{
     margin-bottom: 20px ;
 }
@@ -78,9 +75,7 @@ select:focus-visible {
 .mt-50{
     margin-top: 50px;
 }
-.section-title.mb-50{
-    margin-bottom: 50px;
-}
+
 :focus-visible {
     outline: none !important;
 }
