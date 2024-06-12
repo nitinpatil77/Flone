@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +21,10 @@
         integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- header -->
-    <header class="position-relative">
+    <header class="position-relative" id="page-top">
         <div class="header-padding-1 sticky-bar header-res-padding">
             <div class="container">
                 <div class="row">
@@ -39,18 +41,19 @@
                                 <ul>
                                     <li><a href="./index.html">Home</a></li>
                                     <li><a href="./shop.html">Shop</a></li>
-                                    <li><a href="./shop.html">Collection</a></li>
+                                    <li><a href="./collection.html">Collection</a></li>
                                     <li>
                                         <a href="#">Pages</a>
                                         <ul class="submenu">
                                             <li><a href="/cart.html">Cart</a></li>
+                                            <li><a href="/wishlist.html">wishlist</a></li>
                                             <li><a href="/checkout.html">Checkout</a></li>
                                             <li><a href="/login-register.html">Login</a></li>
 
                                         </ul>
                                     </li>
-                                    <!-- <li><a href="#">Blog</a></li> -->
-                                    <li><a href="./login-register.html">Contact Us</a></li>
+                                    <li><a href="./Blog.html">Blog</a></li>
+                                    <li><a href="./contact.html">Contact Us</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -58,9 +61,9 @@
                     <div class="col-xl-2 col-lg-2 col-md-6 col-8">
                         <div class="header-right-wrap">
                             <div class="same-style header-search d-none d-lg-block">
-                                <!-- <button class="search-active">
+                                <button class="search-active">
                                     <i class="bi bi-search"></i>
-                                </button> -->
+                                </button>
                                 <!-- <div class="search-content">
                                     <form action="#">
                                         <input type="text" placeholder="Search">
@@ -83,23 +86,23 @@
                                     </ul>
                                 </div> -->
                             </div>
-                            <!-- <div class="same-style header-compare">
+                            <div class="same-style header-compare">
                                 <a href="#">
                                     <i class="bi bi-shuffle"></i>
-                                    <i class="fa-solid fa-shuffle"></i>
+                                    <!-- <i class="fa-solid fa-shuffle"></i> -->
                                     <span class="count-style">0</span>
                                 </a>
-                            </div> -->
+                            </div>
                             <div class="same-style header-wishlist">
-                                <a href="./wishlist.html">
+                                <a href="/wishlist.html">
                                     <i class="bi bi-suit-heart"></i>
-                                    <span class="count-style wish">0</span>
+                                    <span class="count-style" id="wishlistLength">0</span>
                                 </a>
                             </div>
                             <div class="same-style cart-wrap">
                                 <a href="./cart.html">
                                     <i class="bi bi-bag-check"></i>
-                                    <span class="count-style cart">0</span>
+                                    <span class="count-style" id="cartlength">0</span>
                                 </a>
                             </div>
                             <div class="same-style mobile-off-canvas d-block d-lg-none">
@@ -161,8 +164,8 @@
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center m-0">
-                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">shop</li>
                     </ol>
                 </nav>
             </div>
@@ -170,269 +173,35 @@
         <section class="shop-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 order-2 order-lg-1">
-                        <div class="sidebar-style">
-                            <div class="sidebar-widget">
-                                <h4 class="pro-sidebar-title">Search </h4>
-                                <div class="pro-sidebar-search">
-                                    <form class="pro-sidebar-search-form position-relative" action="#">
-                                        <input type="text" placeholder="Search here..." id="serchProduct">
-                                        <button>
-                                            <i class="bi bi-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="sidebar-widget">
-                                <h4 class="pro-sidebar-title">Categories </h4>
-                                <div class="sidebar-widget-list mt-30">
-                                    <ul>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button>
-                                                    <span class="checkmark"></span>
-                                                    All Categories
-                                                </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button>
-                                                    <span class="checkmark"></span>
-                                                    fashion
-                                                </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button><span class="checkmark"></span> men</button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button> <span class="checkmark"></span> women </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button> <span class="checkmark"></span> electronics </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button><span class="checkmark"></span> furniture </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button><span class="checkmark"></span> plant </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left">
-                                                <button><span class="checkmark"></span> organic food </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> flower </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> book </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> cosmetics </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> accessories </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> handmade </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> kids </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> auto parts </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> cakes </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> pet food </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> medical </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> black friday </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button> <span
-                                                        class="checkmark"></span> christmas </button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="sidebar-widget mt-50">
-                                <h4 class="pro-sidebar-title">Color </h4>
-                                <div class="sidebar-widget-list mt-20">
-                                    <ul>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button><span
-                                                        class="checkmark"></span> All Colors </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button><span
-                                                        class="checkmark"></span> white </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button><span
-                                                        class="checkmark"></span> black </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button><span
-                                                        class="checkmark"></span> brown </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button><span
-                                                        class="checkmark"></span> blue </button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="sidebar-widget mt-40">
-                                <h4 class="pro-sidebar-title">Size </h4>
-                                <div class="sidebar-widget-list mt-20">
-                                    <ul>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button><span
-                                                        class="checkmark"></span> All Sizes </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button class="text-uppercase"> <span
-                                                        class="checkmark"></span>x </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button class="text-uppercase"> <span
-                                                        class="checkmark"></span>m </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button class="text-uppercase"> <span
-                                                        class="checkmark"></span>xl </button></div>
-                                        </li>
-                                        <li>
-                                            <div class="sidebar-widget-list-left"><button class="text-uppercase"> <span
-                                                        class="checkmark"></span>xxl </button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="sidebar-widget mt-50">
-                                <h4 class="pro-sidebar-title">Tag </h4>
-                                <div class="sidebar-widget-tag mt-25">
-                                    <ul>
-                                        <li><button>fashion</button></li>
-                                        <li><button>men</button></li>
-                                        <li><button>jacket</button></li>
-                                        <li><button>full sleeve</button></li>
-                                        <li><button>women</button></li>
-                                        <li><button>coat</button></li>
-                                        <li><button>top</button></li>
-                                        <li><button>sleeveless</button></li>
-                                        <li><button>electronics</button></li>
-                                        <li><button>furniture</button></li>
-                                        <li><button>plant</button></li>
-                                        <li><button>organic food</button></li>
-                                        <li><button>flower</button></li>
-                                        <li><button>book</button></li>
-                                        <li><button>cosmetics</button></li>
-                                        <li><button>accessories</button></li>
-                                        <li><button>handmade</button></li>
-                                        <li><button>kids</button></li>
-                                        <li><button>auto parts</button></li>
-                                        <li><button>cakes</button></li>
-                                        <li><button>pet food</button></li>
-                                        <li><button>medical</button></li>
-                                        <li><button>black friday</button></li>
-                                        <li><button>christmas</button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="col-lg-12 order-1 order-lg-2">
                         <div class="row">
                             <div class="shop-top-bar">
                                 <div class="select-shoing-wrap d-flex">
-                                    <div class="shop-select">
+                                    <!-- <div class="shop-select">
                                         <select>
                                             <option value="default">Default</option>
                                             <option value="priceHighToLow">Price - High to Low</option>
                                             <option value="priceLowToHigh">Price - Low to High</option>
                                         </select>
-                                    </div>
-                                    <p>Showing 15 of 144 result</p>
+                                    </div> -->
+                                    <p>Showing <span id="result-start">1</span> of <span id="result-end">15</span> result</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row" id="shopPage">
-                            <!-- <div class="col-xl-4 col-sm-6">
-                                <div class="product-card position-relative">
-                                    <div class="product-img">
-                                        <a href="#" id="">
-                                            <img src="../img/product/fashion/3.jpg" alt="product-img"
-                                                class="default-img">
-                                            <img src="../img/product/fashion/1.jpg" alt="product-img" class="hover-img">
-                                        </a>
-                                        <div class="product-img-badges">
-                                            <span class="pink">-40%</span>
-                                            <span class="purple">New</span>
-                                        </div>
-                                        <div class="product-action d-flex">
-                                            <div class="pro-same-action pro-wishlist">
-                                                <button class="" title="Add to wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </button>
-                                            </div>
-                                            <div class="pro-same-action pro-cart">
-                                                <button class="" title="Add to cart">
-                                                    <i class="bi bi-cart2"></i> Add to cart
-                                                </button>
-                                            </div>
-                                            <div class="pro-same-action pro-quickview">
-                                                <button title="Quick View">
-                                                    <i class="bi bi-eye"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content text-center">
-                                        <h3><a href="#" id="">Lorem ipsum jacket</a></h3>
-                                        <div class="product-rating">
-                                            <i class="bi bi-star yellow"></i>
-                                            <i class="bi bi-star yellow"></i>
-                                            <i class="bi bi-star yellow"></i>
-                                            <i class="bi bi-star yellow"></i>
-                                            <i class="bi bi-star yellow"></i>
-                                        </div>
-                                        <div class="product-price">
-                                            <span class="new">€10.47</span>
-                                            <span class="old">€17.45</span>
-                                        </div>
-                                    </div>
+
+                        </div>
+                        <div class="row" id="shopPage2">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                                <div class="w-100 d-flex justify-content-center align-item-center mt-4">
+                                    <ul class="pagination w-100 d-flex justify-content-center align-item-center gap-3">
+                                        <li class="rounded-5 page-active">1</li>
+                                        <li class="rounded-5">2</li>
+                                        <li class="rounded-5">3</li>
+                                        <li class="rounded-5">4</li>
+                                    </ul>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -527,8 +296,8 @@
     </footer>
     <!-- footer end -->
     <!-- script -->
-    
-    <script src="./assets/js/shop.js"></script>
+
+    <script src="./assets/js/collection.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

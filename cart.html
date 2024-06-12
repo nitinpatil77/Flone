@@ -24,6 +24,7 @@
 
 <body>
     <!-- header -->
+  
     <header class="position-relative">
         <div class="header-padding-1 sticky-bar header-res-padding">
             <div class="container">
@@ -41,17 +42,18 @@
                                 <ul>
                                     <li><a href="./index.html">Home</a></li>
                                     <li><a href="./shop.html">Shop</a></li>
-                                    <li><a href="./shop.html">Collection</a></li>
+                                    <li><a href="./collection.html">Collection</a></li>
                                     <li>
                                         <a href="#">Pages</a>
                                         <ul class="submenu">
                                             <li><a href="/cart.html">Cart</a></li>
+                                            <li><a href="/wishlist.html">wishlist</a></li>
                                             <li><a href="/checkout.html">Checkout</a></li>
                                             <li><a href="/login-register.html">Login</a></li>
 
                                         </ul>
                                     </li>
-                                    <!-- <li><a href="#">Blog</a></li> -->
+                                    <li><a href="./Blog.html">Blog</a></li>
                                     <li><a href="./contact.html">Contact Us</a></li>
                                 </ul>
                             </nav>
@@ -60,9 +62,9 @@
                     <div class="col-xl-2 col-lg-2 col-md-6 col-8">
                         <div class="header-right-wrap">
                             <div class="same-style header-search d-none d-lg-block">
-                                <!-- <button class="search-active">
+                                <button class="search-active">
                                     <i class="bi bi-search"></i>
-                                </button> -->
+                                </button>
                                 <!-- <div class="search-content">
                                     <form action="#">
                                         <input type="text" placeholder="Search">
@@ -85,23 +87,23 @@
                                     </ul>
                                 </div> -->
                             </div>
-                            <!-- <div class="same-style header-compare">
+                            <div class="same-style header-compare">
                                 <a href="#">
                                     <i class="bi bi-shuffle"></i>
-                                    <i class="fa-solid fa-shuffle"></i>
+                                    <!-- <i class="fa-solid fa-shuffle"></i> -->
                                     <span class="count-style">0</span>
                                 </a>
-                            </div> -->
+                            </div>
                             <div class="same-style header-wishlist">
-                                <a href="./wishlist.html">
+                                <a href="/wishlist.html">
                                     <i class="bi bi-suit-heart"></i>
-                                    <span class="count-style wish">0</span>
+                                    <span class="count-style" id="wishlistLength">0</span>
                                 </a>
                             </div>
                             <div class="same-style cart-wrap">
                                 <a href="./cart.html">
                                     <i class="bi bi-bag-check"></i>
-                                    <span class="count-style cart">0</span>
+                                    <span class="count-style" id="cartlength">0</span>
                                 </a>
                             </div>
                             <div class="same-style mobile-off-canvas d-block d-lg-none">
@@ -164,7 +166,7 @@
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center m-0">
-                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Cart</li>
                     </ol>
                 </nav>
@@ -309,7 +311,7 @@
                             </div>
                             <h5>Total products <span id="total-product">0</span></h5>
                             <h4 class="grand-totall-title">Grand Total <span id="grand-total">$0.00</span></h4>
-                            <a  id="Checkout-btn">Proceed to Checkout</a>
+                            <a  id="Checkout-btn" onclick="displayCheckOut()">Proceed to Checkout</a>
                         </div>
                     </div>
                 </div>
@@ -405,7 +407,7 @@
     </footer>
     <!-- footer end -->
     <!-- script -->
-    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/collection.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

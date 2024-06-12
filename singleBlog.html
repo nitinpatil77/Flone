@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flone</title>
+    <!-- own css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/super-classes.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font-aswome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="position-relative" id="page-top">
+        <div class="header-padding-1 sticky-bar header-res-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/img/logo/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./shop.html">Shop</a></li>
+                                    <li><a href="./collection.html">Collection</a></li>
+                                    <li>
+                                        <a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="/cart.html">Cart</a></li>
+                                            <li><a href="/wishlist.html">wishlist</a></li>
+                                            <li><a href="/checkout.html">Checkout</a></li>
+                                            <li><a href="/login-register.html">Login</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="./Blog.html">Blog</a></li>
+                                    <li><a href="./contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+                        <div class="header-right-wrap">
+                            <div class="same-style header-search d-none d-lg-block">
+                                <button class="search-active">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                                <!-- <div class="search-content">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search">
+                                        <button class="button-search">
+                                            <i class="pe-7s-search"></i>
+                                        </button>
+                                    </form>
+                                </div> -->
+                            </div>
+                            <div class="same-style account-setting d-none d-lg-block">
+                                <a href="./login-register.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    <h6 id="user"></h6>
+                                </a>
+                                <!-- <div class="account-dropdown">
+                                    <ul>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">my account</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <div class="same-style header-compare">
+                                <a href="#">
+                                    <i class="bi bi-shuffle"></i>
+                                    <!-- <i class="fa-solid fa-shuffle"></i> -->
+                                    <span class="count-style">0</span>
+                                </a>
+                            </div>
+                            <div class="same-style header-wishlist">
+                                <a href="/wishlist.html">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <span class="count-style" id="wishlistLength">0</span>
+                                </a>
+                            </div>
+                            <div class="same-style cart-wrap">
+                                <a href="./cart.html">
+                                    <i class="bi bi-bag-check"></i>
+                                    <span class="count-style" id="cartlength">0</span>
+                                </a>
+                            </div>
+                            <div class="same-style mobile-off-canvas d-block d-lg-none">
+                                <button class="mobile-aside-button">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas-mobile-menu d-lg-none" id="offcanvas-mobile-menu">
+                    <button class="offcanvas-menu-close" id="mobile-menu-close-trigger">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    <div class="offcanvas-wrapper">
+                        <div class="offcanvas-inner-content d-flex flex-column">
+                            <div class="offcanvas-mobile-search-area">
+                                <form action="#">
+                                    <input type="search" placeholder="Search ...">
+                                    <button type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <nav class="offcanvas-navigation" id="offcanvas-navigation">
+                                <ul>
+                                    <li class="menu-item-has-children d-block position-relative">
+                                        <a href="./index.html">Home</a>
+                                    </li>
+                                    <li class="menu-item-has-children d-block position-relative">
+                                        <a href="./shop.html">Shop</a>
+                                    </li>
+                                    <li class="menu-item-has-children d-block position-relative">
+                                        <a href="./shop.html">Collection</a>
+                                    </li>
+                                    <li class="menu-item-has-children d-block position-relative ">
+                                        <a href="./cart.html">Pages</a>
+                                        <span class="menu-expand">+</span>
+                                        <ul class="sub-menu">
+                                            <li><a href="./cart.html">Cart</a></li>
+                                            <li><a href="./checkout.html">checkout</a></li>
+                                            <li><a href="./login-register.html">Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children d-block position-relative">
+                                        <a href="./contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+        <section class="breadcrumb-area">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center m-0">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Single Blog</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="shop-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 order-2 order-lg-1">
+                        <div class="sidebar-style">
+                            <div class="sidebar-widget">
+                                <h4 class="pro-sidebar-title">Search </h4>
+                                <div class="pro-sidebar-search">
+                                    <form class="pro-sidebar-search-form position-relative" action="#">
+                                        <input type="text" placeholder="Search here..." id="serchProduct">
+                                        <button>
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="sidebar-widget">
+                                <h4 class="pro-sidebar-title">Recent projects</h4>
+                                <div class="sidebar-widget-list mt-30">
+                                    <div class="sidebar-project-wrap mt-30 d-flex flex-column gap-4">
+                                        <div
+                                            class="single-sidebar-blog d-flex justify-content-start align-item-center gap-3 border-bottom pb-3">
+                                            <div class="sidebar-blog-img"><a href="/blog-details-standard"><img
+                                                        src="/assets/img/blog/sidebar-1.jpg" alt=""></a></div>
+                                            <div
+                                                class="sidebar-blog-content d-flex flex-column justify-content-center align-item-center">
+                                                <span class="mt-2">Photography</span>
+                                                <h4><a href="/blog-details-standard">T- Shart And Jeans</a></h4>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="single-sidebar-blog d-flex justify-content-start align-item-center gap-3 border-bottom pb-3">
+                                            <div class="sidebar-blog-img"><a href="/blog-details-standard"><img
+                                                        src="/assets/img/blog/sidebar-2.jpg" alt=""></a></div>
+                                            <div
+                                                class="sidebar-blog-content d-flex flex-column justify-content-center align-item-center">
+                                                <span>Branding</span>
+                                                <h4><a href="/blog-details-standard">T- Shart And Jeans</a></h4>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="single-sidebar-blog d-flex justify-content-start align-item-center gap-3 border-bottom pb-3">
+                                            <div class="sidebar-blog-img"><a href="/blog-details-standard"><img
+                                                        src="/assets/img/blog/sidebar-3.jpg" alt=""></a></div>
+                                            <div
+                                                class="sidebar-blog-content d-flex flex-column justify-content-center align-item-center">
+                                                <span>Design</span>
+                                                <h4><a href="/blog-details-standard">T- Shart And Jeans</a></h4>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="single-sidebar-blog d-flex justify-content-start align-item-center gap-3">
+                                            <div class="sidebar-blog-img"><a href="/blog-details-standard"><img
+                                                        src="/assets/img/blog/sidebar-2.jpg" alt=""></a></div>
+                                            <div
+                                                class="sidebar-blog-content d-flex flex-column justify-content-center align-item-center">
+                                                <span>Photography</span>
+                                                <h4><a href="/blog-details-standard">T- Shart And Jeans</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-widget mt-50">
+                                <h4 class="pro-sidebar-title">Categories</h4>
+                                <div class="sidebar-widget-list mt-20">
+                                    <ul>
+                                        <li>
+                                            <div class="sidebar-widget-list-left">
+                                                <input type="checkbox" name="All Categories" class="checkmark"
+                                                    value="All Colors">
+                                                <label for="All Categories">women</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-widget-list-left">
+                                                <input type="checkbox" name="All Categories" class="checkmark"
+                                                    value="White">
+                                                <label for="All Categories">men</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-widget-list-left">
+                                                <input type="checkbox" name="All Categories" class="checkmark"
+                                                    value="black">
+                                                <label for="All Categories">Bags</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-widget-list-left">
+                                                <input type="checkbox" name="All Categories" class="checkmark"
+                                                    value="brown">
+                                                <label for="All Categories">Accessories</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar-widget mt-30">
+                                <h4 class="pro-sidebar-title">Tag</h4>
+                                <div class="sidebar-widget-tag mt-25">
+                                    <ul>
+                                        <li><button id="tags">top</button></li>
+                                        <li><button id="tags">accessories</button></li>
+                                        <li><button id="tags">fashion</button></li>
+                                        <li><button id="tags">men</button></li>
+                                        <li><button id="tags">electronics</button></li>
+                                        <li><button id="tags">women</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 order-1 order-lg-2">
+                        <div class="row">
+                            <div class="blog-details-wrapper ml-20">
+                                <div class="blog-details-top">
+                                    <div class="blog-details-img"><img alt="" src="/assets/img/blog/blog-5.jpg"></div>
+                                    <div class="blog-details-content mt-25">
+                                        <div class="blog-meta-2">
+                                            <ul>
+                                                <li>22 April, 2018</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="mt-2">14 Emerging Fashion Influencers Who Are Going to Own 2018</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprhendit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qei officia deser mollit anim id est laborum.
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            doloremque laudantium, totam rem aperiam. </p>
+                                        <blockquote>Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do
+                                            eiusmod tempor incididunt labo dolor magna aliqua. Ut enim ad minim veniam
+                                            quis nostrud.</blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                                <div class="dec-img-wrapper mt-5">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="dec-img mb-50"><img alt=""
+                                                    src="/assets/img/blog/blog-details.jpg"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="dec-img mb-50"><img alt=""
+                                                    src="/assets/img/blog/blog-details-2.jpg"></div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="blog-comment-wrapper mt-30">
+                                    <h4 class="blog-dec-title">comments</h4>
+                                    <div class="single-comment-wrapper d-flex justify-content-center align-item-center gap-4 mt-35">
+                                        <div class="blog-comment-img"><img src="/assets/img/blog/comment-1.jpg" alt="">
+                                        </div>
+                                        <div class="blog-comment-content d-flex flex-column justify-content-center align-item-center gap-1">
+                                            <h4>Anthony Stephens</h4><span>October 14, 2018 </span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim
+                                                veniam, </p>
+                                        </div>
+                                    </div>
+                                    <div class="single-comment-wrapper d-flex justify-content-center align-item-center gap-4 mt-50 ml-120">
+                                        <div class="blog-comment-img"><img src="/assets/img/blog/comment-2.jpg" alt="">
+                                        </div>
+                                        <div class="blog-comment-content d-flex flex-column justify-content-center align-item-center gap-1">
+                                            <h4>DX Joxova</h4><span>October 14, 2018 </span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim
+                                                veniam, </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-reply-wrapper mt-50">
+                                    <h4 class="blog-dec-title">post a comment</h4>
+                                    <form class="blog-form mt-30">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="leave-form"><input type="text" placeholder="Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="leave-form"><input type="email"
+                                                    id="email-input"   placeholder="Email Address "></div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="text-leave mt-25"><textarea
+                                                        placeholder="Message"></textarea><input type="submit"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer-area position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="copyright">
+                            <div class="footer-logo">
+                                <a href="/index.html">
+                                    <img src="./assets/img/logo/logo.png" alt="footer-logo">
+                                </a>
+                            </div>
+                            <p>© 2024 <a href="https://hasthemes.com" rel="noopener noreferrer"
+                                    target="_blank">Flone</a>.<br> All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-title">
+                                <h3>About Us</h3>
+                            </div>
+                            <div class="footer-list">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Store location</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Orders tracking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="footer-widget ml-50">
+                            <div class="footer-title">
+                                <h3>Useful links</h3>
+                            </div>
+                            <div class="footer-list">
+                                <ul>
+                                    <li><a href="#">Retuns</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    <li><a href="#">Size guide</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer-widget ml-75">
+                            <div class="footer-title">
+                                <h3>Follow Us</h3>
+                            </div>
+                            <div class="footer-list">
+                                <ul>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-widget ml-70">
+                            <div class="footer-title">
+                                <h3>SUBSCRIBE</h3>
+                            </div>
+                            <div class="subscribe-style">
+                                <p>Get E-mail updates about our latest shop and special offers.</p>
+                                <div>
+                                    <div class="subscribe-form">
+                                        <div class="mc-form">
+                                            <div>
+                                                <input id="mc-form-email" class="email" type="email"
+                                                    placeholder="Enter your email address...">
+                                            </div>
+                                            <div class="clear">
+                                                <button class="button">SUBSCRIBE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- script -->
+
+        <script src="./assets/js/collection.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
